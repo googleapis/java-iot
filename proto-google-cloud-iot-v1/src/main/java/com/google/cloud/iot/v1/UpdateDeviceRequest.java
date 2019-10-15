@@ -133,13 +133,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Required. The new values for the device. The `id` and `num_id` fields must
+   * The new values for the device. The `id` and `num_id` fields must
    * be empty, and the field `name` must specify the name path. For example,
    * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
    * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
    * </pre>
    *
-   * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+   * <code>.google.cloud.iot.v1.Device device = 2;</code>
    */
   public boolean hasDevice() {
     return device_ != null;
@@ -148,13 +148,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Required. The new values for the device. The `id` and `num_id` fields must
+   * The new values for the device. The `id` and `num_id` fields must
    * be empty, and the field `name` must specify the name path. For example,
    * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
    * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
    * </pre>
    *
-   * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+   * <code>.google.cloud.iot.v1.Device device = 2;</code>
    */
   public com.google.cloud.iot.v1.Device getDevice() {
     return device_ == null ? com.google.cloud.iot.v1.Device.getDefaultInstance() : device_;
@@ -163,13 +163,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Required. The new values for the device. The `id` and `num_id` fields must
+   * The new values for the device. The `id` and `num_id` fields must
    * be empty, and the field `name` must specify the name path. For example,
    * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
    * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
    * </pre>
    *
-   * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+   * <code>.google.cloud.iot.v1.Device device = 2;</code>
    */
   public com.google.cloud.iot.v1.DeviceOrBuilder getDeviceOrBuilder() {
     return getDevice();
@@ -181,14 +181,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Required. Only updates the `device` fields indicated by this mask.
+   * Only updates the `device` fields indicated by this mask.
    * The field mask must not be empty, and it must not contain fields that
    * are immutable or only set by the server.
    * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
    * </pre>
    *
-   * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-   * </code>
+   * <code>.google.protobuf.FieldMask update_mask = 3;</code>
    */
   public boolean hasUpdateMask() {
     return updateMask_ != null;
@@ -197,14 +196,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Required. Only updates the `device` fields indicated by this mask.
+   * Only updates the `device` fields indicated by this mask.
    * The field mask must not be empty, and it must not contain fields that
    * are immutable or only set by the server.
    * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
    * </pre>
    *
-   * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-   * </code>
+   * <code>.google.protobuf.FieldMask update_mask = 3;</code>
    */
   public com.google.protobuf.FieldMask getUpdateMask() {
     return updateMask_ == null ? com.google.protobuf.FieldMask.getDefaultInstance() : updateMask_;
@@ -213,14 +211,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
    *
    *
    * <pre>
-   * Required. Only updates the `device` fields indicated by this mask.
+   * Only updates the `device` fields indicated by this mask.
    * The field mask must not be empty, and it must not contain fields that
    * are immutable or only set by the server.
    * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
    * </pre>
    *
-   * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-   * </code>
+   * <code>.google.protobuf.FieldMask update_mask = 3;</code>
    */
   public com.google.protobuf.FieldMaskOrBuilder getUpdateMaskOrBuilder() {
     return getUpdateMask();
@@ -592,14 +589,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. The new values for the device. The `id` and `num_id` fields must
+     * The new values for the device. The `id` and `num_id` fields must
      * be empty, and the field `name` must specify the name path. For example,
      * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
      * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
      * </pre>
      *
-     * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.cloud.iot.v1.Device device = 2;</code>
      */
     public boolean hasDevice() {
       return deviceBuilder_ != null || device_ != null;
@@ -608,14 +604,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. The new values for the device. The `id` and `num_id` fields must
+     * The new values for the device. The `id` and `num_id` fields must
      * be empty, and the field `name` must specify the name path. For example,
      * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
      * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
      * </pre>
      *
-     * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.cloud.iot.v1.Device device = 2;</code>
      */
     public com.google.cloud.iot.v1.Device getDevice() {
       if (deviceBuilder_ == null) {
@@ -628,14 +623,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. The new values for the device. The `id` and `num_id` fields must
+     * The new values for the device. The `id` and `num_id` fields must
      * be empty, and the field `name` must specify the name path. For example,
      * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
      * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
      * </pre>
      *
-     * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.cloud.iot.v1.Device device = 2;</code>
      */
     public Builder setDevice(com.google.cloud.iot.v1.Device value) {
       if (deviceBuilder_ == null) {
@@ -654,14 +648,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. The new values for the device. The `id` and `num_id` fields must
+     * The new values for the device. The `id` and `num_id` fields must
      * be empty, and the field `name` must specify the name path. For example,
      * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
      * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
      * </pre>
      *
-     * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.cloud.iot.v1.Device device = 2;</code>
      */
     public Builder setDevice(com.google.cloud.iot.v1.Device.Builder builderForValue) {
       if (deviceBuilder_ == null) {
@@ -677,14 +670,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. The new values for the device. The `id` and `num_id` fields must
+     * The new values for the device. The `id` and `num_id` fields must
      * be empty, and the field `name` must specify the name path. For example,
      * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
      * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
      * </pre>
      *
-     * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.cloud.iot.v1.Device device = 2;</code>
      */
     public Builder mergeDevice(com.google.cloud.iot.v1.Device value) {
       if (deviceBuilder_ == null) {
@@ -705,14 +697,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. The new values for the device. The `id` and `num_id` fields must
+     * The new values for the device. The `id` and `num_id` fields must
      * be empty, and the field `name` must specify the name path. For example,
      * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
      * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
      * </pre>
      *
-     * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.cloud.iot.v1.Device device = 2;</code>
      */
     public Builder clearDevice() {
       if (deviceBuilder_ == null) {
@@ -729,14 +720,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. The new values for the device. The `id` and `num_id` fields must
+     * The new values for the device. The `id` and `num_id` fields must
      * be empty, and the field `name` must specify the name path. For example,
      * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
      * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
      * </pre>
      *
-     * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.cloud.iot.v1.Device device = 2;</code>
      */
     public com.google.cloud.iot.v1.Device.Builder getDeviceBuilder() {
 
@@ -747,14 +737,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. The new values for the device. The `id` and `num_id` fields must
+     * The new values for the device. The `id` and `num_id` fields must
      * be empty, and the field `name` must specify the name path. For example,
      * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
      * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
      * </pre>
      *
-     * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.cloud.iot.v1.Device device = 2;</code>
      */
     public com.google.cloud.iot.v1.DeviceOrBuilder getDeviceOrBuilder() {
       if (deviceBuilder_ != null) {
@@ -767,14 +756,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. The new values for the device. The `id` and `num_id` fields must
+     * The new values for the device. The `id` and `num_id` fields must
      * be empty, and the field `name` must specify the name path. For example,
      * `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
      * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
      * </pre>
      *
-     * <code>.google.cloud.iot.v1.Device device = 2 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.cloud.iot.v1.Device device = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.cloud.iot.v1.Device,
@@ -803,14 +791,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. Only updates the `device` fields indicated by this mask.
+     * Only updates the `device` fields indicated by this mask.
      * The field mask must not be empty, and it must not contain fields that
      * are immutable or only set by the server.
      * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
      * </pre>
      *
-     * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.protobuf.FieldMask update_mask = 3;</code>
      */
     public boolean hasUpdateMask() {
       return updateMaskBuilder_ != null || updateMask_ != null;
@@ -819,14 +806,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. Only updates the `device` fields indicated by this mask.
+     * Only updates the `device` fields indicated by this mask.
      * The field mask must not be empty, and it must not contain fields that
      * are immutable or only set by the server.
      * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
      * </pre>
      *
-     * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.protobuf.FieldMask update_mask = 3;</code>
      */
     public com.google.protobuf.FieldMask getUpdateMask() {
       if (updateMaskBuilder_ == null) {
@@ -841,14 +827,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. Only updates the `device` fields indicated by this mask.
+     * Only updates the `device` fields indicated by this mask.
      * The field mask must not be empty, and it must not contain fields that
      * are immutable or only set by the server.
      * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
      * </pre>
      *
-     * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.protobuf.FieldMask update_mask = 3;</code>
      */
     public Builder setUpdateMask(com.google.protobuf.FieldMask value) {
       if (updateMaskBuilder_ == null) {
@@ -867,14 +852,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. Only updates the `device` fields indicated by this mask.
+     * Only updates the `device` fields indicated by this mask.
      * The field mask must not be empty, and it must not contain fields that
      * are immutable or only set by the server.
      * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
      * </pre>
      *
-     * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.protobuf.FieldMask update_mask = 3;</code>
      */
     public Builder setUpdateMask(com.google.protobuf.FieldMask.Builder builderForValue) {
       if (updateMaskBuilder_ == null) {
@@ -890,14 +874,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. Only updates the `device` fields indicated by this mask.
+     * Only updates the `device` fields indicated by this mask.
      * The field mask must not be empty, and it must not contain fields that
      * are immutable or only set by the server.
      * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
      * </pre>
      *
-     * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.protobuf.FieldMask update_mask = 3;</code>
      */
     public Builder mergeUpdateMask(com.google.protobuf.FieldMask value) {
       if (updateMaskBuilder_ == null) {
@@ -918,14 +901,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. Only updates the `device` fields indicated by this mask.
+     * Only updates the `device` fields indicated by this mask.
      * The field mask must not be empty, and it must not contain fields that
      * are immutable or only set by the server.
      * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
      * </pre>
      *
-     * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.protobuf.FieldMask update_mask = 3;</code>
      */
     public Builder clearUpdateMask() {
       if (updateMaskBuilder_ == null) {
@@ -942,14 +924,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. Only updates the `device` fields indicated by this mask.
+     * Only updates the `device` fields indicated by this mask.
      * The field mask must not be empty, and it must not contain fields that
      * are immutable or only set by the server.
      * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
      * </pre>
      *
-     * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.protobuf.FieldMask update_mask = 3;</code>
      */
     public com.google.protobuf.FieldMask.Builder getUpdateMaskBuilder() {
 
@@ -960,14 +941,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. Only updates the `device` fields indicated by this mask.
+     * Only updates the `device` fields indicated by this mask.
      * The field mask must not be empty, and it must not contain fields that
      * are immutable or only set by the server.
      * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
      * </pre>
      *
-     * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.protobuf.FieldMask update_mask = 3;</code>
      */
     public com.google.protobuf.FieldMaskOrBuilder getUpdateMaskOrBuilder() {
       if (updateMaskBuilder_ != null) {
@@ -982,14 +962,13 @@ public final class UpdateDeviceRequest extends com.google.protobuf.GeneratedMess
      *
      *
      * <pre>
-     * Required. Only updates the `device` fields indicated by this mask.
+     * Only updates the `device` fields indicated by this mask.
      * The field mask must not be empty, and it must not contain fields that
      * are immutable or only set by the server.
      * Mutable top-level fields: `credentials`, `blocked`, and `metadata`
      * </pre>
      *
-     * <code>.google.protobuf.FieldMask update_mask = 3 [(.google.api.field_behavior) = REQUIRED];
-     * </code>
+     * <code>.google.protobuf.FieldMask update_mask = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
             com.google.protobuf.FieldMask,

@@ -128,13 +128,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
    *
    *
    * <pre>
-   * Required. The name of the registry. For example,
+   * The name of the registry. For example,
    * `projects/example-project/locations/us-central1/registries/my-registry`.
    * </pre>
    *
-   * <code>
-   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-   * </code>
+   * <code>string parent = 1;</code>
    */
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
@@ -151,13 +149,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
    *
    *
    * <pre>
-   * Required. The name of the registry. For example,
+   * The name of the registry. For example,
    * `projects/example-project/locations/us-central1/registries/my-registry`.
    * </pre>
    *
-   * <code>
-   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-   * </code>
+   * <code>string parent = 1;</code>
    */
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
@@ -177,11 +173,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
    *
    *
    * <pre>
-   * Required. The value of `gateway_id` can be either the device numeric ID or the
+   * The value of `gateway_id` can be either the device numeric ID or the
    * user-defined device identifier.
    * </pre>
    *
-   * <code>string gateway_id = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+   * <code>string gateway_id = 2;</code>
    */
   public java.lang.String getGatewayId() {
     java.lang.Object ref = gatewayId_;
@@ -198,11 +194,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
    *
    *
    * <pre>
-   * Required. The value of `gateway_id` can be either the device numeric ID or the
+   * The value of `gateway_id` can be either the device numeric ID or the
    * user-defined device identifier.
    * </pre>
    *
-   * <code>string gateway_id = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+   * <code>string gateway_id = 2;</code>
    */
   public com.google.protobuf.ByteString getGatewayIdBytes() {
     java.lang.Object ref = gatewayId_;
@@ -222,12 +218,12 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
    *
    *
    * <pre>
-   * Required. The device to associate with the specified gateway. The value of
+   * The device to associate with the specified gateway. The value of
    * `device_id` can be either the device numeric ID or the user-defined device
    * identifier.
    * </pre>
    *
-   * <code>string device_id = 3 [(.google.api.field_behavior) = REQUIRED];</code>
+   * <code>string device_id = 3;</code>
    */
   public java.lang.String getDeviceId() {
     java.lang.Object ref = deviceId_;
@@ -244,12 +240,12 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
    *
    *
    * <pre>
-   * Required. The device to associate with the specified gateway. The value of
+   * The device to associate with the specified gateway. The value of
    * `device_id` can be either the device numeric ID or the user-defined device
    * identifier.
    * </pre>
    *
-   * <code>string device_id = 3 [(.google.api.field_behavior) = REQUIRED];</code>
+   * <code>string device_id = 3;</code>
    */
   public com.google.protobuf.ByteString getDeviceIdBytes() {
     java.lang.Object ref = deviceId_;
@@ -618,13 +614,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The name of the registry. For example,
+     * The name of the registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public java.lang.String getParent() {
       java.lang.Object ref = parent_;
@@ -641,13 +635,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The name of the registry. For example,
+     * The name of the registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public com.google.protobuf.ByteString getParentBytes() {
       java.lang.Object ref = parent_;
@@ -664,13 +656,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The name of the registry. For example,
+     * The name of the registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public Builder setParent(java.lang.String value) {
       if (value == null) {
@@ -685,13 +675,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The name of the registry. For example,
+     * The name of the registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public Builder clearParent() {
 
@@ -703,13 +691,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The name of the registry. For example,
+     * The name of the registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public Builder setParentBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -727,11 +713,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The value of `gateway_id` can be either the device numeric ID or the
+     * The value of `gateway_id` can be either the device numeric ID or the
      * user-defined device identifier.
      * </pre>
      *
-     * <code>string gateway_id = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string gateway_id = 2;</code>
      */
     public java.lang.String getGatewayId() {
       java.lang.Object ref = gatewayId_;
@@ -748,11 +734,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The value of `gateway_id` can be either the device numeric ID or the
+     * The value of `gateway_id` can be either the device numeric ID or the
      * user-defined device identifier.
      * </pre>
      *
-     * <code>string gateway_id = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string gateway_id = 2;</code>
      */
     public com.google.protobuf.ByteString getGatewayIdBytes() {
       java.lang.Object ref = gatewayId_;
@@ -769,11 +755,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The value of `gateway_id` can be either the device numeric ID or the
+     * The value of `gateway_id` can be either the device numeric ID or the
      * user-defined device identifier.
      * </pre>
      *
-     * <code>string gateway_id = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string gateway_id = 2;</code>
      */
     public Builder setGatewayId(java.lang.String value) {
       if (value == null) {
@@ -788,11 +774,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The value of `gateway_id` can be either the device numeric ID or the
+     * The value of `gateway_id` can be either the device numeric ID or the
      * user-defined device identifier.
      * </pre>
      *
-     * <code>string gateway_id = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string gateway_id = 2;</code>
      */
     public Builder clearGatewayId() {
 
@@ -804,11 +790,11 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The value of `gateway_id` can be either the device numeric ID or the
+     * The value of `gateway_id` can be either the device numeric ID or the
      * user-defined device identifier.
      * </pre>
      *
-     * <code>string gateway_id = 2 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string gateway_id = 2;</code>
      */
     public Builder setGatewayIdBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -826,12 +812,12 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The device to associate with the specified gateway. The value of
+     * The device to associate with the specified gateway. The value of
      * `device_id` can be either the device numeric ID or the user-defined device
      * identifier.
      * </pre>
      *
-     * <code>string device_id = 3 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string device_id = 3;</code>
      */
     public java.lang.String getDeviceId() {
       java.lang.Object ref = deviceId_;
@@ -848,12 +834,12 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The device to associate with the specified gateway. The value of
+     * The device to associate with the specified gateway. The value of
      * `device_id` can be either the device numeric ID or the user-defined device
      * identifier.
      * </pre>
      *
-     * <code>string device_id = 3 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string device_id = 3;</code>
      */
     public com.google.protobuf.ByteString getDeviceIdBytes() {
       java.lang.Object ref = deviceId_;
@@ -870,12 +856,12 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The device to associate with the specified gateway. The value of
+     * The device to associate with the specified gateway. The value of
      * `device_id` can be either the device numeric ID or the user-defined device
      * identifier.
      * </pre>
      *
-     * <code>string device_id = 3 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string device_id = 3;</code>
      */
     public Builder setDeviceId(java.lang.String value) {
       if (value == null) {
@@ -890,12 +876,12 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The device to associate with the specified gateway. The value of
+     * The device to associate with the specified gateway. The value of
      * `device_id` can be either the device numeric ID or the user-defined device
      * identifier.
      * </pre>
      *
-     * <code>string device_id = 3 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string device_id = 3;</code>
      */
     public Builder clearDeviceId() {
 
@@ -907,12 +893,12 @@ public final class BindDeviceToGatewayRequest extends com.google.protobuf.Genera
      *
      *
      * <pre>
-     * Required. The device to associate with the specified gateway. The value of
+     * The device to associate with the specified gateway. The value of
      * `device_id` can be either the device numeric ID or the user-defined device
      * identifier.
      * </pre>
      *
-     * <code>string device_id = 3 [(.google.api.field_behavior) = REQUIRED];</code>
+     * <code>string device_id = 3;</code>
      */
     public Builder setDeviceIdBytes(com.google.protobuf.ByteString value) {
       if (value == null) {

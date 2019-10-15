@@ -198,13 +198,11 @@ public final class ListDevicesRequest extends com.google.protobuf.GeneratedMessa
    *
    *
    * <pre>
-   * Required. The device registry path. Required. For example,
+   * The device registry path. Required. For example,
    * `projects/my-project/locations/us-central1/registries/my-registry`.
    * </pre>
    *
-   * <code>
-   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-   * </code>
+   * <code>string parent = 1;</code>
    */
   public java.lang.String getParent() {
     java.lang.Object ref = parent_;
@@ -221,13 +219,11 @@ public final class ListDevicesRequest extends com.google.protobuf.GeneratedMessa
    *
    *
    * <pre>
-   * Required. The device registry path. Required. For example,
+   * The device registry path. Required. For example,
    * `projects/my-project/locations/us-central1/registries/my-registry`.
    * </pre>
    *
-   * <code>
-   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-   * </code>
+   * <code>string parent = 1;</code>
    */
   public com.google.protobuf.ByteString getParentBytes() {
     java.lang.Object ref = parent_;
@@ -980,13 +976,11 @@ public final class ListDevicesRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Required. The device registry path. Required. For example,
+     * The device registry path. Required. For example,
      * `projects/my-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public java.lang.String getParent() {
       java.lang.Object ref = parent_;
@@ -1003,13 +997,11 @@ public final class ListDevicesRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Required. The device registry path. Required. For example,
+     * The device registry path. Required. For example,
      * `projects/my-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public com.google.protobuf.ByteString getParentBytes() {
       java.lang.Object ref = parent_;
@@ -1026,13 +1018,11 @@ public final class ListDevicesRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Required. The device registry path. Required. For example,
+     * The device registry path. Required. For example,
      * `projects/my-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public Builder setParent(java.lang.String value) {
       if (value == null) {
@@ -1047,13 +1037,11 @@ public final class ListDevicesRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Required. The device registry path. Required. For example,
+     * The device registry path. Required. For example,
      * `projects/my-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public Builder clearParent() {
 
@@ -1065,13 +1053,11 @@ public final class ListDevicesRequest extends com.google.protobuf.GeneratedMessa
      *
      *
      * <pre>
-     * Required. The device registry path. Required. For example,
+     * The device registry path. Required. For example,
      * `projects/my-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string parent = 1;</code>
      */
     public Builder setParentBytes(com.google.protobuf.ByteString value) {
       if (value == null) {

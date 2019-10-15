@@ -27,26 +27,22 @@ public interface GetDeviceRegistryRequestOrBuilder
    *
    *
    * <pre>
-   * Required. The name of the device registry. For example,
+   * The name of the device registry. For example,
    * `projects/example-project/locations/us-central1/registries/my-registry`.
    * </pre>
    *
-   * <code>
-   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-   * </code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
    *
    *
    * <pre>
-   * Required. The name of the device registry. For example,
+   * The name of the device registry. For example,
    * `projects/example-project/locations/us-central1/registries/my-registry`.
    * </pre>
    *
-   * <code>
-   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-   * </code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString getNameBytes();
 }

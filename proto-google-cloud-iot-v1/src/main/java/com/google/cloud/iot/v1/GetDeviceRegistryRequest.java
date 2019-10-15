@@ -112,13 +112,11 @@ public final class GetDeviceRegistryRequest extends com.google.protobuf.Generate
    *
    *
    * <pre>
-   * Required. The name of the device registry. For example,
+   * The name of the device registry. For example,
    * `projects/example-project/locations/us-central1/registries/my-registry`.
    * </pre>
    *
-   * <code>
-   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-   * </code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -135,13 +133,11 @@ public final class GetDeviceRegistryRequest extends com.google.protobuf.Generate
    *
    *
    * <pre>
-   * Required. The name of the device registry. For example,
+   * The name of the device registry. For example,
    * `projects/example-project/locations/us-central1/registries/my-registry`.
    * </pre>
    *
-   * <code>
-   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-   * </code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString getNameBytes() {
     java.lang.Object ref = name_;
@@ -477,13 +473,11 @@ public final class GetDeviceRegistryRequest extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The name of the device registry. For example,
+     * The name of the device registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -500,13 +494,11 @@ public final class GetDeviceRegistryRequest extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The name of the device registry. For example,
+     * The name of the device registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString getNameBytes() {
       java.lang.Object ref = name_;
@@ -523,13 +515,11 @@ public final class GetDeviceRegistryRequest extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The name of the device registry. For example,
+     * The name of the device registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(java.lang.String value) {
       if (value == null) {
@@ -544,13 +534,11 @@ public final class GetDeviceRegistryRequest extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The name of the device registry. For example,
+     * The name of the device registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
 
@@ -562,13 +550,11 @@ public final class GetDeviceRegistryRequest extends com.google.protobuf.Generate
      *
      *
      * <pre>
-     * Required. The name of the device registry. For example,
+     * The name of the device registry. For example,
      * `projects/example-project/locations/us-central1/registries/my-registry`.
      * </pre>
      *
-     * <code>
-     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
-     * </code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(com.google.protobuf.ByteString value) {
       if (value == null) {
