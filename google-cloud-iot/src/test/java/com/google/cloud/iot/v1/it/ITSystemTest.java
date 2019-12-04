@@ -90,18 +90,19 @@ public class ITSystemTest {
   @BeforeClass
   public static void beforeTest() throws Exception {
     client = DeviceManagerClient.create();
-    deviceRegistry=client.createDeviceRegistry(PARENT, DEVICE_REGISTRY);
-    if (deviceRegistry!=null){
-      device=client.createDevice(REGISTRY_ID, DEVICE);
+    deviceRegistry = client.createDeviceRegistry(PARENT, DEVICE_REGISTRY);
+    if (deviceRegistry != null) {
+      RegistryName parent = RegistryName.of(PROJECT_ID, LOCATION, REGISTRY_ID);
+      device = client.createDevice(parent, DEVICE);
     }
   }
 
   @AfterClass
   public static void afterTest() {
-    if (device!=null){
+    if (device != null) {
       client.deleteDevice(DEVICE_NAME);
     }
-    if(deviceRegistry!=null){
+    if (deviceRegistry != null) {
       client.deleteDeviceRegistry(REGISTRY_NAME);
     }
     client.close();
