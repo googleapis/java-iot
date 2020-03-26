@@ -30,7 +30,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler",
+    value = "by gRPC proto compiler (version 1.10.0)",
     comments = "Source: google/cloud/iot/v1/device_manager.proto")
 public final class DeviceManagerGrpc {
 
@@ -39,20 +39,30 @@ public final class DeviceManagerGrpc {
   public static final String SERVICE_NAME = "google.cloud.iot.v1.DeviceManager";
 
   // Static method descriptors that strictly reflect the proto.
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCreateDeviceRegistryMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.CreateDeviceRegistryRequest,
+          com.google.cloud.iot.v1.DeviceRegistry>
+      METHOD_CREATE_DEVICE_REGISTRY = getCreateDeviceRegistryMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.CreateDeviceRegistryRequest,
           com.google.cloud.iot.v1.DeviceRegistry>
       getCreateDeviceRegistryMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CreateDeviceRegistry",
-      requestType = com.google.cloud.iot.v1.CreateDeviceRegistryRequest.class,
-      responseType = com.google.cloud.iot.v1.DeviceRegistry.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.CreateDeviceRegistryRequest,
           com.google.cloud.iot.v1.DeviceRegistry>
       getCreateDeviceRegistryMethod() {
+    return getCreateDeviceRegistryMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.CreateDeviceRegistryRequest,
+          com.google.cloud.iot.v1.DeviceRegistry>
+      getCreateDeviceRegistryMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.CreateDeviceRegistryRequest,
             com.google.cloud.iot.v1.DeviceRegistry>
@@ -69,7 +79,8 @@ public final class DeviceManagerGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "CreateDeviceRegistry"))
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "CreateDeviceRegistry"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -87,18 +98,26 @@ public final class DeviceManagerGrpc {
     return getCreateDeviceRegistryMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getGetDeviceRegistryMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.GetDeviceRegistryRequest, com.google.cloud.iot.v1.DeviceRegistry>
+      METHOD_GET_DEVICE_REGISTRY = getGetDeviceRegistryMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.GetDeviceRegistryRequest, com.google.cloud.iot.v1.DeviceRegistry>
       getGetDeviceRegistryMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "GetDeviceRegistry",
-      requestType = com.google.cloud.iot.v1.GetDeviceRegistryRequest.class,
-      responseType = com.google.cloud.iot.v1.DeviceRegistry.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.GetDeviceRegistryRequest, com.google.cloud.iot.v1.DeviceRegistry>
       getGetDeviceRegistryMethod() {
+    return getGetDeviceRegistryMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.GetDeviceRegistryRequest, com.google.cloud.iot.v1.DeviceRegistry>
+      getGetDeviceRegistryMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.GetDeviceRegistryRequest,
             com.google.cloud.iot.v1.DeviceRegistry>
@@ -113,7 +132,9 @@ public final class DeviceManagerGrpc {
                           com.google.cloud.iot.v1.DeviceRegistry>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetDeviceRegistry"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "GetDeviceRegistry"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -131,20 +152,30 @@ public final class DeviceManagerGrpc {
     return getGetDeviceRegistryMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getUpdateDeviceRegistryMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.UpdateDeviceRegistryRequest,
+          com.google.cloud.iot.v1.DeviceRegistry>
+      METHOD_UPDATE_DEVICE_REGISTRY = getUpdateDeviceRegistryMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.UpdateDeviceRegistryRequest,
           com.google.cloud.iot.v1.DeviceRegistry>
       getUpdateDeviceRegistryMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "UpdateDeviceRegistry",
-      requestType = com.google.cloud.iot.v1.UpdateDeviceRegistryRequest.class,
-      responseType = com.google.cloud.iot.v1.DeviceRegistry.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.UpdateDeviceRegistryRequest,
           com.google.cloud.iot.v1.DeviceRegistry>
       getUpdateDeviceRegistryMethod() {
+    return getUpdateDeviceRegistryMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.UpdateDeviceRegistryRequest,
+          com.google.cloud.iot.v1.DeviceRegistry>
+      getUpdateDeviceRegistryMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.UpdateDeviceRegistryRequest,
             com.google.cloud.iot.v1.DeviceRegistry>
@@ -161,7 +192,8 @@ public final class DeviceManagerGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "UpdateDeviceRegistry"))
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "UpdateDeviceRegistry"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -179,18 +211,26 @@ public final class DeviceManagerGrpc {
     return getUpdateDeviceRegistryMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDeleteDeviceRegistryMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.DeleteDeviceRegistryRequest, com.google.protobuf.Empty>
+      METHOD_DELETE_DEVICE_REGISTRY = getDeleteDeviceRegistryMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.DeleteDeviceRegistryRequest, com.google.protobuf.Empty>
       getDeleteDeviceRegistryMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "DeleteDeviceRegistry",
-      requestType = com.google.cloud.iot.v1.DeleteDeviceRegistryRequest.class,
-      responseType = com.google.protobuf.Empty.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.DeleteDeviceRegistryRequest, com.google.protobuf.Empty>
       getDeleteDeviceRegistryMethod() {
+    return getDeleteDeviceRegistryMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.DeleteDeviceRegistryRequest, com.google.protobuf.Empty>
+      getDeleteDeviceRegistryMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.DeleteDeviceRegistryRequest, com.google.protobuf.Empty>
         getDeleteDeviceRegistryMethod;
@@ -206,7 +246,8 @@ public final class DeviceManagerGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "DeleteDeviceRegistry"))
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "DeleteDeviceRegistry"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -224,20 +265,30 @@ public final class DeviceManagerGrpc {
     return getDeleteDeviceRegistryMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getListDeviceRegistriesMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ListDeviceRegistriesRequest,
+          com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
+      METHOD_LIST_DEVICE_REGISTRIES = getListDeviceRegistriesMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ListDeviceRegistriesRequest,
           com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
       getListDeviceRegistriesMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ListDeviceRegistries",
-      requestType = com.google.cloud.iot.v1.ListDeviceRegistriesRequest.class,
-      responseType = com.google.cloud.iot.v1.ListDeviceRegistriesResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ListDeviceRegistriesRequest,
           com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
       getListDeviceRegistriesMethod() {
+    return getListDeviceRegistriesMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ListDeviceRegistriesRequest,
+          com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
+      getListDeviceRegistriesMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.ListDeviceRegistriesRequest,
             com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
@@ -254,7 +305,8 @@ public final class DeviceManagerGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "ListDeviceRegistries"))
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "ListDeviceRegistries"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -273,18 +325,26 @@ public final class DeviceManagerGrpc {
     return getListDeviceRegistriesMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getCreateDeviceMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.CreateDeviceRequest, com.google.cloud.iot.v1.Device>
+      METHOD_CREATE_DEVICE = getCreateDeviceMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.CreateDeviceRequest, com.google.cloud.iot.v1.Device>
       getCreateDeviceMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "CreateDevice",
-      requestType = com.google.cloud.iot.v1.CreateDeviceRequest.class,
-      responseType = com.google.cloud.iot.v1.Device.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.CreateDeviceRequest, com.google.cloud.iot.v1.Device>
       getCreateDeviceMethod() {
+    return getCreateDeviceMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.CreateDeviceRequest, com.google.cloud.iot.v1.Device>
+      getCreateDeviceMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.CreateDeviceRequest, com.google.cloud.iot.v1.Device>
         getCreateDeviceMethod;
@@ -297,7 +357,9 @@ public final class DeviceManagerGrpc {
                       .<com.google.cloud.iot.v1.CreateDeviceRequest, com.google.cloud.iot.v1.Device>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CreateDevice"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "CreateDevice"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -314,18 +376,26 @@ public final class DeviceManagerGrpc {
     return getCreateDeviceMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getGetDeviceMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.GetDeviceRequest, com.google.cloud.iot.v1.Device>
+      METHOD_GET_DEVICE = getGetDeviceMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.GetDeviceRequest, com.google.cloud.iot.v1.Device>
       getGetDeviceMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "GetDevice",
-      requestType = com.google.cloud.iot.v1.GetDeviceRequest.class,
-      responseType = com.google.cloud.iot.v1.Device.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.GetDeviceRequest, com.google.cloud.iot.v1.Device>
       getGetDeviceMethod() {
+    return getGetDeviceMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.GetDeviceRequest, com.google.cloud.iot.v1.Device>
+      getGetDeviceMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.GetDeviceRequest, com.google.cloud.iot.v1.Device>
         getGetDeviceMethod;
@@ -338,7 +408,8 @@ public final class DeviceManagerGrpc {
                       .<com.google.cloud.iot.v1.GetDeviceRequest, com.google.cloud.iot.v1.Device>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetDevice"))
+                      .setFullMethodName(
+                          generateFullMethodName("google.cloud.iot.v1.DeviceManager", "GetDevice"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -354,18 +425,26 @@ public final class DeviceManagerGrpc {
     return getGetDeviceMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getUpdateDeviceMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.UpdateDeviceRequest, com.google.cloud.iot.v1.Device>
+      METHOD_UPDATE_DEVICE = getUpdateDeviceMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.UpdateDeviceRequest, com.google.cloud.iot.v1.Device>
       getUpdateDeviceMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "UpdateDevice",
-      requestType = com.google.cloud.iot.v1.UpdateDeviceRequest.class,
-      responseType = com.google.cloud.iot.v1.Device.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.UpdateDeviceRequest, com.google.cloud.iot.v1.Device>
       getUpdateDeviceMethod() {
+    return getUpdateDeviceMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.UpdateDeviceRequest, com.google.cloud.iot.v1.Device>
+      getUpdateDeviceMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.UpdateDeviceRequest, com.google.cloud.iot.v1.Device>
         getUpdateDeviceMethod;
@@ -378,7 +457,9 @@ public final class DeviceManagerGrpc {
                       .<com.google.cloud.iot.v1.UpdateDeviceRequest, com.google.cloud.iot.v1.Device>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateDevice"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "UpdateDevice"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -395,18 +476,26 @@ public final class DeviceManagerGrpc {
     return getUpdateDeviceMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getDeleteDeviceMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.DeleteDeviceRequest, com.google.protobuf.Empty>
+      METHOD_DELETE_DEVICE = getDeleteDeviceMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.DeleteDeviceRequest, com.google.protobuf.Empty>
       getDeleteDeviceMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "DeleteDevice",
-      requestType = com.google.cloud.iot.v1.DeleteDeviceRequest.class,
-      responseType = com.google.protobuf.Empty.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.DeleteDeviceRequest, com.google.protobuf.Empty>
       getDeleteDeviceMethod() {
+    return getDeleteDeviceMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.DeleteDeviceRequest, com.google.protobuf.Empty>
+      getDeleteDeviceMethodHelper() {
     io.grpc.MethodDescriptor<com.google.cloud.iot.v1.DeleteDeviceRequest, com.google.protobuf.Empty>
         getDeleteDeviceMethod;
     if ((getDeleteDeviceMethod = DeviceManagerGrpc.getDeleteDeviceMethod) == null) {
@@ -418,7 +507,9 @@ public final class DeviceManagerGrpc {
                       .<com.google.cloud.iot.v1.DeleteDeviceRequest, com.google.protobuf.Empty>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DeleteDevice"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "DeleteDevice"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -435,18 +526,26 @@ public final class DeviceManagerGrpc {
     return getDeleteDeviceMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getListDevicesMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ListDevicesRequest, com.google.cloud.iot.v1.ListDevicesResponse>
+      METHOD_LIST_DEVICES = getListDevicesMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ListDevicesRequest, com.google.cloud.iot.v1.ListDevicesResponse>
       getListDevicesMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ListDevices",
-      requestType = com.google.cloud.iot.v1.ListDevicesRequest.class,
-      responseType = com.google.cloud.iot.v1.ListDevicesResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ListDevicesRequest, com.google.cloud.iot.v1.ListDevicesResponse>
       getListDevicesMethod() {
+    return getListDevicesMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ListDevicesRequest, com.google.cloud.iot.v1.ListDevicesResponse>
+      getListDevicesMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.ListDevicesRequest, com.google.cloud.iot.v1.ListDevicesResponse>
         getListDevicesMethod;
@@ -460,7 +559,9 @@ public final class DeviceManagerGrpc {
                           com.google.cloud.iot.v1.ListDevicesResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListDevices"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "ListDevices"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -476,20 +577,30 @@ public final class DeviceManagerGrpc {
     return getListDevicesMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getModifyCloudToDeviceConfigMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest,
+          com.google.cloud.iot.v1.DeviceConfig>
+      METHOD_MODIFY_CLOUD_TO_DEVICE_CONFIG = getModifyCloudToDeviceConfigMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest,
           com.google.cloud.iot.v1.DeviceConfig>
       getModifyCloudToDeviceConfigMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ModifyCloudToDeviceConfig",
-      requestType = com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest.class,
-      responseType = com.google.cloud.iot.v1.DeviceConfig.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest,
           com.google.cloud.iot.v1.DeviceConfig>
       getModifyCloudToDeviceConfigMethod() {
+    return getModifyCloudToDeviceConfigMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest,
+          com.google.cloud.iot.v1.DeviceConfig>
+      getModifyCloudToDeviceConfigMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest,
             com.google.cloud.iot.v1.DeviceConfig>
@@ -508,7 +619,8 @@ public final class DeviceManagerGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "ModifyCloudToDeviceConfig"))
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "ModifyCloudToDeviceConfig"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -526,20 +638,30 @@ public final class DeviceManagerGrpc {
     return getModifyCloudToDeviceConfigMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getListDeviceConfigVersionsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest,
+          com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
+      METHOD_LIST_DEVICE_CONFIG_VERSIONS = getListDeviceConfigVersionsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest,
           com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
       getListDeviceConfigVersionsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ListDeviceConfigVersions",
-      requestType = com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest.class,
-      responseType = com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest,
           com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
       getListDeviceConfigVersionsMethod() {
+    return getListDeviceConfigVersionsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest,
+          com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
+      getListDeviceConfigVersionsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest,
             com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
@@ -558,7 +680,8 @@ public final class DeviceManagerGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "ListDeviceConfigVersions"))
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "ListDeviceConfigVersions"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -577,20 +700,30 @@ public final class DeviceManagerGrpc {
     return getListDeviceConfigVersionsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getListDeviceStatesMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ListDeviceStatesRequest,
+          com.google.cloud.iot.v1.ListDeviceStatesResponse>
+      METHOD_LIST_DEVICE_STATES = getListDeviceStatesMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ListDeviceStatesRequest,
           com.google.cloud.iot.v1.ListDeviceStatesResponse>
       getListDeviceStatesMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "ListDeviceStates",
-      requestType = com.google.cloud.iot.v1.ListDeviceStatesRequest.class,
-      responseType = com.google.cloud.iot.v1.ListDeviceStatesResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.ListDeviceStatesRequest,
           com.google.cloud.iot.v1.ListDeviceStatesResponse>
       getListDeviceStatesMethod() {
+    return getListDeviceStatesMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.ListDeviceStatesRequest,
+          com.google.cloud.iot.v1.ListDeviceStatesResponse>
+      getListDeviceStatesMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.ListDeviceStatesRequest,
             com.google.cloud.iot.v1.ListDeviceStatesResponse>
@@ -605,7 +738,9 @@ public final class DeviceManagerGrpc {
                           com.google.cloud.iot.v1.ListDeviceStatesResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListDeviceStates"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "ListDeviceStates"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -623,18 +758,26 @@ public final class DeviceManagerGrpc {
     return getListDeviceStatesMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getSetIamPolicyMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.iam.v1.SetIamPolicyRequest, com.google.iam.v1.Policy>
+      METHOD_SET_IAM_POLICY = getSetIamPolicyMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.iam.v1.SetIamPolicyRequest, com.google.iam.v1.Policy>
       getSetIamPolicyMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "SetIamPolicy",
-      requestType = com.google.iam.v1.SetIamPolicyRequest.class,
-      responseType = com.google.iam.v1.Policy.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.iam.v1.SetIamPolicyRequest, com.google.iam.v1.Policy>
       getSetIamPolicyMethod() {
+    return getSetIamPolicyMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.iam.v1.SetIamPolicyRequest, com.google.iam.v1.Policy>
+      getSetIamPolicyMethodHelper() {
     io.grpc.MethodDescriptor<com.google.iam.v1.SetIamPolicyRequest, com.google.iam.v1.Policy>
         getSetIamPolicyMethod;
     if ((getSetIamPolicyMethod = DeviceManagerGrpc.getSetIamPolicyMethod) == null) {
@@ -645,7 +788,9 @@ public final class DeviceManagerGrpc {
                   io.grpc.MethodDescriptor
                       .<com.google.iam.v1.SetIamPolicyRequest, com.google.iam.v1.Policy>newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SetIamPolicy"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "SetIamPolicy"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -662,18 +807,26 @@ public final class DeviceManagerGrpc {
     return getSetIamPolicyMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getGetIamPolicyMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.iam.v1.GetIamPolicyRequest, com.google.iam.v1.Policy>
+      METHOD_GET_IAM_POLICY = getGetIamPolicyMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.iam.v1.GetIamPolicyRequest, com.google.iam.v1.Policy>
       getGetIamPolicyMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "GetIamPolicy",
-      requestType = com.google.iam.v1.GetIamPolicyRequest.class,
-      responseType = com.google.iam.v1.Policy.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.iam.v1.GetIamPolicyRequest, com.google.iam.v1.Policy>
       getGetIamPolicyMethod() {
+    return getGetIamPolicyMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.iam.v1.GetIamPolicyRequest, com.google.iam.v1.Policy>
+      getGetIamPolicyMethodHelper() {
     io.grpc.MethodDescriptor<com.google.iam.v1.GetIamPolicyRequest, com.google.iam.v1.Policy>
         getGetIamPolicyMethod;
     if ((getGetIamPolicyMethod = DeviceManagerGrpc.getGetIamPolicyMethod) == null) {
@@ -684,7 +837,9 @@ public final class DeviceManagerGrpc {
                   io.grpc.MethodDescriptor
                       .<com.google.iam.v1.GetIamPolicyRequest, com.google.iam.v1.Policy>newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetIamPolicy"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "GetIamPolicy"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -701,18 +856,26 @@ public final class DeviceManagerGrpc {
     return getGetIamPolicyMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getTestIamPermissionsMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.iam.v1.TestIamPermissionsRequest, com.google.iam.v1.TestIamPermissionsResponse>
+      METHOD_TEST_IAM_PERMISSIONS = getTestIamPermissionsMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.iam.v1.TestIamPermissionsRequest, com.google.iam.v1.TestIamPermissionsResponse>
       getTestIamPermissionsMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "TestIamPermissions",
-      requestType = com.google.iam.v1.TestIamPermissionsRequest.class,
-      responseType = com.google.iam.v1.TestIamPermissionsResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.iam.v1.TestIamPermissionsRequest, com.google.iam.v1.TestIamPermissionsResponse>
       getTestIamPermissionsMethod() {
+    return getTestIamPermissionsMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.iam.v1.TestIamPermissionsRequest, com.google.iam.v1.TestIamPermissionsResponse>
+      getTestIamPermissionsMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.iam.v1.TestIamPermissionsRequest,
             com.google.iam.v1.TestIamPermissionsResponse>
@@ -727,7 +890,9 @@ public final class DeviceManagerGrpc {
                           com.google.iam.v1.TestIamPermissionsResponse>
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-                      .setFullMethodName(generateFullMethodName(SERVICE_NAME, "TestIamPermissions"))
+                      .setFullMethodName(
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "TestIamPermissions"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -744,20 +909,30 @@ public final class DeviceManagerGrpc {
     return getTestIamPermissionsMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getSendCommandToDeviceMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.SendCommandToDeviceRequest,
+          com.google.cloud.iot.v1.SendCommandToDeviceResponse>
+      METHOD_SEND_COMMAND_TO_DEVICE = getSendCommandToDeviceMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.SendCommandToDeviceRequest,
           com.google.cloud.iot.v1.SendCommandToDeviceResponse>
       getSendCommandToDeviceMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "SendCommandToDevice",
-      requestType = com.google.cloud.iot.v1.SendCommandToDeviceRequest.class,
-      responseType = com.google.cloud.iot.v1.SendCommandToDeviceResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.SendCommandToDeviceRequest,
           com.google.cloud.iot.v1.SendCommandToDeviceResponse>
       getSendCommandToDeviceMethod() {
+    return getSendCommandToDeviceMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.SendCommandToDeviceRequest,
+          com.google.cloud.iot.v1.SendCommandToDeviceResponse>
+      getSendCommandToDeviceMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.SendCommandToDeviceRequest,
             com.google.cloud.iot.v1.SendCommandToDeviceResponse>
@@ -774,7 +949,8 @@ public final class DeviceManagerGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "SendCommandToDevice"))
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "SendCommandToDevice"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -793,20 +969,30 @@ public final class DeviceManagerGrpc {
     return getSendCommandToDeviceMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getBindDeviceToGatewayMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.BindDeviceToGatewayRequest,
+          com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
+      METHOD_BIND_DEVICE_TO_GATEWAY = getBindDeviceToGatewayMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.BindDeviceToGatewayRequest,
           com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
       getBindDeviceToGatewayMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "BindDeviceToGateway",
-      requestType = com.google.cloud.iot.v1.BindDeviceToGatewayRequest.class,
-      responseType = com.google.cloud.iot.v1.BindDeviceToGatewayResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.BindDeviceToGatewayRequest,
           com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
       getBindDeviceToGatewayMethod() {
+    return getBindDeviceToGatewayMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.BindDeviceToGatewayRequest,
+          com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
+      getBindDeviceToGatewayMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.BindDeviceToGatewayRequest,
             com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
@@ -823,7 +1009,8 @@ public final class DeviceManagerGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "BindDeviceToGateway"))
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "BindDeviceToGateway"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -842,20 +1029,30 @@ public final class DeviceManagerGrpc {
     return getBindDeviceToGatewayMethod;
   }
 
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getUnbindDeviceFromGatewayMethod()} instead.
+  public static final io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest,
+          com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
+      METHOD_UNBIND_DEVICE_FROM_GATEWAY = getUnbindDeviceFromGatewayMethodHelper();
+
   private static volatile io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest,
           com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
       getUnbindDeviceFromGatewayMethod;
 
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "UnbindDeviceFromGateway",
-      requestType = com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest.class,
-      responseType = com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static io.grpc.MethodDescriptor<
           com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest,
           com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
       getUnbindDeviceFromGatewayMethod() {
+    return getUnbindDeviceFromGatewayMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<
+          com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest,
+          com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
+      getUnbindDeviceFromGatewayMethodHelper() {
     io.grpc.MethodDescriptor<
             com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest,
             com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
@@ -873,7 +1070,8 @@ public final class DeviceManagerGrpc {
                           newBuilder()
                       .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
                       .setFullMethodName(
-                          generateFullMethodName(SERVICE_NAME, "UnbindDeviceFromGateway"))
+                          generateFullMethodName(
+                              "google.cloud.iot.v1.DeviceManager", "UnbindDeviceFromGateway"))
                       .setSampledToLocalTracing(true)
                       .setRequestMarshaller(
                           io.grpc.protobuf.ProtoUtils.marshaller(
@@ -894,43 +1092,19 @@ public final class DeviceManagerGrpc {
 
   /** Creates a new async stub that supports all call types for the service */
   public static DeviceManagerStub newStub(io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<DeviceManagerStub> factory =
-        new io.grpc.stub.AbstractStub.StubFactory<DeviceManagerStub>() {
-          @java.lang.Override
-          public DeviceManagerStub newStub(
-              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-            return new DeviceManagerStub(channel, callOptions);
-          }
-        };
-    return DeviceManagerStub.newStub(factory, channel);
+    return new DeviceManagerStub(channel);
   }
 
   /**
    * Creates a new blocking-style stub that supports unary and streaming output calls on the service
    */
   public static DeviceManagerBlockingStub newBlockingStub(io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<DeviceManagerBlockingStub> factory =
-        new io.grpc.stub.AbstractStub.StubFactory<DeviceManagerBlockingStub>() {
-          @java.lang.Override
-          public DeviceManagerBlockingStub newStub(
-              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-            return new DeviceManagerBlockingStub(channel, callOptions);
-          }
-        };
-    return DeviceManagerBlockingStub.newStub(factory, channel);
+    return new DeviceManagerBlockingStub(channel);
   }
 
   /** Creates a new ListenableFuture-style stub that supports unary calls on the service */
   public static DeviceManagerFutureStub newFutureStub(io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<DeviceManagerFutureStub> factory =
-        new io.grpc.stub.AbstractStub.StubFactory<DeviceManagerFutureStub>() {
-          @java.lang.Override
-          public DeviceManagerFutureStub newStub(
-              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-            return new DeviceManagerFutureStub(channel, callOptions);
-          }
-        };
-    return DeviceManagerFutureStub.newStub(factory, channel);
+    return new DeviceManagerFutureStub(channel);
   }
 
   /**
@@ -952,7 +1126,7 @@ public final class DeviceManagerGrpc {
     public void createDeviceRegistry(
         com.google.cloud.iot.v1.CreateDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateDeviceRegistryMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCreateDeviceRegistryMethodHelper(), responseObserver);
     }
 
     /**
@@ -965,7 +1139,7 @@ public final class DeviceManagerGrpc {
     public void getDeviceRegistry(
         com.google.cloud.iot.v1.GetDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetDeviceRegistryMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getGetDeviceRegistryMethodHelper(), responseObserver);
     }
 
     /**
@@ -978,7 +1152,7 @@ public final class DeviceManagerGrpc {
     public void updateDeviceRegistry(
         com.google.cloud.iot.v1.UpdateDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateDeviceRegistryMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getUpdateDeviceRegistryMethodHelper(), responseObserver);
     }
 
     /**
@@ -991,7 +1165,7 @@ public final class DeviceManagerGrpc {
     public void deleteDeviceRegistry(
         com.google.cloud.iot.v1.DeleteDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
-      asyncUnimplementedUnaryCall(getDeleteDeviceRegistryMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getDeleteDeviceRegistryMethodHelper(), responseObserver);
     }
 
     /**
@@ -1005,7 +1179,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.ListDeviceRegistriesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getListDeviceRegistriesMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListDeviceRegistriesMethodHelper(), responseObserver);
     }
 
     /**
@@ -1018,7 +1192,7 @@ public final class DeviceManagerGrpc {
     public void createDevice(
         com.google.cloud.iot.v1.CreateDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
-      asyncUnimplementedUnaryCall(getCreateDeviceMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getCreateDeviceMethodHelper(), responseObserver);
     }
 
     /**
@@ -1031,7 +1205,7 @@ public final class DeviceManagerGrpc {
     public void getDevice(
         com.google.cloud.iot.v1.GetDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetDeviceMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getGetDeviceMethodHelper(), responseObserver);
     }
 
     /**
@@ -1044,7 +1218,7 @@ public final class DeviceManagerGrpc {
     public void updateDevice(
         com.google.cloud.iot.v1.UpdateDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
-      asyncUnimplementedUnaryCall(getUpdateDeviceMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getUpdateDeviceMethodHelper(), responseObserver);
     }
 
     /**
@@ -1057,7 +1231,7 @@ public final class DeviceManagerGrpc {
     public void deleteDevice(
         com.google.cloud.iot.v1.DeleteDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
-      asyncUnimplementedUnaryCall(getDeleteDeviceMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getDeleteDeviceMethodHelper(), responseObserver);
     }
 
     /**
@@ -1070,7 +1244,7 @@ public final class DeviceManagerGrpc {
     public void listDevices(
         com.google.cloud.iot.v1.ListDevicesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDevicesResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(getListDevicesMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListDevicesMethodHelper(), responseObserver);
     }
 
     /**
@@ -1085,7 +1259,7 @@ public final class DeviceManagerGrpc {
     public void modifyCloudToDeviceConfig(
         com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceConfig> responseObserver) {
-      asyncUnimplementedUnaryCall(getModifyCloudToDeviceConfigMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getModifyCloudToDeviceConfigMethodHelper(), responseObserver);
     }
 
     /**
@@ -1100,7 +1274,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getListDeviceConfigVersionsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListDeviceConfigVersionsMethodHelper(), responseObserver);
     }
 
     /**
@@ -1115,7 +1289,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.ListDeviceStatesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceStatesResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getListDeviceStatesMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getListDeviceStatesMethodHelper(), responseObserver);
     }
 
     /**
@@ -1129,7 +1303,7 @@ public final class DeviceManagerGrpc {
     public void setIamPolicy(
         com.google.iam.v1.SetIamPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.Policy> responseObserver) {
-      asyncUnimplementedUnaryCall(getSetIamPolicyMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getSetIamPolicyMethodHelper(), responseObserver);
     }
 
     /**
@@ -1144,7 +1318,7 @@ public final class DeviceManagerGrpc {
     public void getIamPolicy(
         com.google.iam.v1.GetIamPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.Policy> responseObserver) {
-      asyncUnimplementedUnaryCall(getGetIamPolicyMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getGetIamPolicyMethodHelper(), responseObserver);
     }
 
     /**
@@ -1160,7 +1334,7 @@ public final class DeviceManagerGrpc {
         com.google.iam.v1.TestIamPermissionsRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.TestIamPermissionsResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getTestIamPermissionsMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getTestIamPermissionsMethodHelper(), responseObserver);
     }
 
     /**
@@ -1186,7 +1360,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.SendCommandToDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.SendCommandToDeviceResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getSendCommandToDeviceMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getSendCommandToDeviceMethodHelper(), responseObserver);
     }
 
     /**
@@ -1200,7 +1374,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.BindDeviceToGatewayRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getBindDeviceToGatewayMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getBindDeviceToGatewayMethodHelper(), responseObserver);
     }
 
     /**
@@ -1214,131 +1388,131 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
             responseObserver) {
-      asyncUnimplementedUnaryCall(getUnbindDeviceFromGatewayMethod(), responseObserver);
+      asyncUnimplementedUnaryCall(getUnbindDeviceFromGatewayMethodHelper(), responseObserver);
     }
 
     @java.lang.Override
     public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-              getCreateDeviceRegistryMethod(),
+              getCreateDeviceRegistryMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.CreateDeviceRegistryRequest,
                       com.google.cloud.iot.v1.DeviceRegistry>(
                       this, METHODID_CREATE_DEVICE_REGISTRY)))
           .addMethod(
-              getGetDeviceRegistryMethod(),
+              getGetDeviceRegistryMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.GetDeviceRegistryRequest,
                       com.google.cloud.iot.v1.DeviceRegistry>(this, METHODID_GET_DEVICE_REGISTRY)))
           .addMethod(
-              getUpdateDeviceRegistryMethod(),
+              getUpdateDeviceRegistryMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.UpdateDeviceRegistryRequest,
                       com.google.cloud.iot.v1.DeviceRegistry>(
                       this, METHODID_UPDATE_DEVICE_REGISTRY)))
           .addMethod(
-              getDeleteDeviceRegistryMethod(),
+              getDeleteDeviceRegistryMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.DeleteDeviceRegistryRequest,
                       com.google.protobuf.Empty>(this, METHODID_DELETE_DEVICE_REGISTRY)))
           .addMethod(
-              getListDeviceRegistriesMethod(),
+              getListDeviceRegistriesMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.ListDeviceRegistriesRequest,
                       com.google.cloud.iot.v1.ListDeviceRegistriesResponse>(
                       this, METHODID_LIST_DEVICE_REGISTRIES)))
           .addMethod(
-              getCreateDeviceMethod(),
+              getCreateDeviceMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.CreateDeviceRequest, com.google.cloud.iot.v1.Device>(
                       this, METHODID_CREATE_DEVICE)))
           .addMethod(
-              getGetDeviceMethod(),
+              getGetDeviceMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.GetDeviceRequest, com.google.cloud.iot.v1.Device>(
                       this, METHODID_GET_DEVICE)))
           .addMethod(
-              getUpdateDeviceMethod(),
+              getUpdateDeviceMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.UpdateDeviceRequest, com.google.cloud.iot.v1.Device>(
                       this, METHODID_UPDATE_DEVICE)))
           .addMethod(
-              getDeleteDeviceMethod(),
+              getDeleteDeviceMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.DeleteDeviceRequest, com.google.protobuf.Empty>(
                       this, METHODID_DELETE_DEVICE)))
           .addMethod(
-              getListDevicesMethod(),
+              getListDevicesMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.ListDevicesRequest,
                       com.google.cloud.iot.v1.ListDevicesResponse>(this, METHODID_LIST_DEVICES)))
           .addMethod(
-              getModifyCloudToDeviceConfigMethod(),
+              getModifyCloudToDeviceConfigMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest,
                       com.google.cloud.iot.v1.DeviceConfig>(
                       this, METHODID_MODIFY_CLOUD_TO_DEVICE_CONFIG)))
           .addMethod(
-              getListDeviceConfigVersionsMethod(),
+              getListDeviceConfigVersionsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest,
                       com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>(
                       this, METHODID_LIST_DEVICE_CONFIG_VERSIONS)))
           .addMethod(
-              getListDeviceStatesMethod(),
+              getListDeviceStatesMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.ListDeviceStatesRequest,
                       com.google.cloud.iot.v1.ListDeviceStatesResponse>(
                       this, METHODID_LIST_DEVICE_STATES)))
           .addMethod(
-              getSetIamPolicyMethod(),
+              getSetIamPolicyMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.iam.v1.SetIamPolicyRequest, com.google.iam.v1.Policy>(
                       this, METHODID_SET_IAM_POLICY)))
           .addMethod(
-              getGetIamPolicyMethod(),
+              getGetIamPolicyMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.iam.v1.GetIamPolicyRequest, com.google.iam.v1.Policy>(
                       this, METHODID_GET_IAM_POLICY)))
           .addMethod(
-              getTestIamPermissionsMethod(),
+              getTestIamPermissionsMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.iam.v1.TestIamPermissionsRequest,
                       com.google.iam.v1.TestIamPermissionsResponse>(
                       this, METHODID_TEST_IAM_PERMISSIONS)))
           .addMethod(
-              getSendCommandToDeviceMethod(),
+              getSendCommandToDeviceMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.SendCommandToDeviceRequest,
                       com.google.cloud.iot.v1.SendCommandToDeviceResponse>(
                       this, METHODID_SEND_COMMAND_TO_DEVICE)))
           .addMethod(
-              getBindDeviceToGatewayMethod(),
+              getBindDeviceToGatewayMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.BindDeviceToGatewayRequest,
                       com.google.cloud.iot.v1.BindDeviceToGatewayResponse>(
                       this, METHODID_BIND_DEVICE_TO_GATEWAY)))
           .addMethod(
-              getUnbindDeviceFromGatewayMethod(),
+              getUnbindDeviceFromGatewayMethodHelper(),
               asyncUnaryCall(
                   new MethodHandlers<
                       com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest,
@@ -1355,8 +1529,11 @@ public final class DeviceManagerGrpc {
    * Internet of Things (IoT) service. Securely connect and manage IoT devices.
    * </pre>
    */
-  public static final class DeviceManagerStub
-      extends io.grpc.stub.AbstractAsyncStub<DeviceManagerStub> {
+  public static final class DeviceManagerStub extends io.grpc.stub.AbstractStub<DeviceManagerStub> {
+    private DeviceManagerStub(io.grpc.Channel channel) {
+      super(channel);
+    }
+
     private DeviceManagerStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -1377,7 +1554,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.CreateDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCreateDeviceRegistryMethod(), getCallOptions()),
+          getChannel().newCall(getCreateDeviceRegistryMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1393,7 +1570,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.GetDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getGetDeviceRegistryMethod(), getCallOptions()),
+          getChannel().newCall(getGetDeviceRegistryMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1409,7 +1586,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.UpdateDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getUpdateDeviceRegistryMethod(), getCallOptions()),
+          getChannel().newCall(getUpdateDeviceRegistryMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1425,7 +1602,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.DeleteDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getDeleteDeviceRegistryMethod(), getCallOptions()),
+          getChannel().newCall(getDeleteDeviceRegistryMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1442,7 +1619,7 @@ public final class DeviceManagerGrpc {
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListDeviceRegistriesMethod(), getCallOptions()),
+          getChannel().newCall(getListDeviceRegistriesMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1458,7 +1635,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.CreateDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getCreateDeviceMethod(), getCallOptions()),
+          getChannel().newCall(getCreateDeviceMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1474,7 +1651,9 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.GetDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getGetDeviceMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getGetDeviceMethodHelper(), getCallOptions()),
+          request,
+          responseObserver);
     }
 
     /**
@@ -1488,7 +1667,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.UpdateDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getUpdateDeviceMethod(), getCallOptions()),
+          getChannel().newCall(getUpdateDeviceMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1504,7 +1683,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.DeleteDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getDeleteDeviceMethod(), getCallOptions()),
+          getChannel().newCall(getDeleteDeviceMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1520,7 +1699,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.ListDevicesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDevicesResponse> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListDevicesMethod(), getCallOptions()),
+          getChannel().newCall(getListDevicesMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1538,7 +1717,7 @@ public final class DeviceManagerGrpc {
         com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceConfig> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getModifyCloudToDeviceConfigMethod(), getCallOptions()),
+          getChannel().newCall(getModifyCloudToDeviceConfigMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1556,7 +1735,7 @@ public final class DeviceManagerGrpc {
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListDeviceConfigVersionsMethod(), getCallOptions()),
+          getChannel().newCall(getListDeviceConfigVersionsMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1574,7 +1753,7 @@ public final class DeviceManagerGrpc {
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceStatesResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getListDeviceStatesMethod(), getCallOptions()),
+          getChannel().newCall(getListDeviceStatesMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1591,7 +1770,7 @@ public final class DeviceManagerGrpc {
         com.google.iam.v1.SetIamPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.Policy> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSetIamPolicyMethod(), getCallOptions()),
+          getChannel().newCall(getSetIamPolicyMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1609,7 +1788,7 @@ public final class DeviceManagerGrpc {
         com.google.iam.v1.GetIamPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.Policy> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getGetIamPolicyMethod(), getCallOptions()),
+          getChannel().newCall(getGetIamPolicyMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1628,7 +1807,7 @@ public final class DeviceManagerGrpc {
         io.grpc.stub.StreamObserver<com.google.iam.v1.TestIamPermissionsResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getTestIamPermissionsMethod(), getCallOptions()),
+          getChannel().newCall(getTestIamPermissionsMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1657,7 +1836,7 @@ public final class DeviceManagerGrpc {
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.SendCommandToDeviceResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getSendCommandToDeviceMethod(), getCallOptions()),
+          getChannel().newCall(getSendCommandToDeviceMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1674,7 +1853,7 @@ public final class DeviceManagerGrpc {
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getBindDeviceToGatewayMethod(), getCallOptions()),
+          getChannel().newCall(getBindDeviceToGatewayMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1691,7 +1870,7 @@ public final class DeviceManagerGrpc {
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
             responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(getUnbindDeviceFromGatewayMethod(), getCallOptions()),
+          getChannel().newCall(getUnbindDeviceFromGatewayMethodHelper(), getCallOptions()),
           request,
           responseObserver);
     }
@@ -1705,7 +1884,11 @@ public final class DeviceManagerGrpc {
    * </pre>
    */
   public static final class DeviceManagerBlockingStub
-      extends io.grpc.stub.AbstractBlockingStub<DeviceManagerBlockingStub> {
+      extends io.grpc.stub.AbstractStub<DeviceManagerBlockingStub> {
+    private DeviceManagerBlockingStub(io.grpc.Channel channel) {
+      super(channel);
+    }
+
     private DeviceManagerBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -1726,7 +1909,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.DeviceRegistry createDeviceRegistry(
         com.google.cloud.iot.v1.CreateDeviceRegistryRequest request) {
       return blockingUnaryCall(
-          getChannel(), getCreateDeviceRegistryMethod(), getCallOptions(), request);
+          getChannel(), getCreateDeviceRegistryMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1739,7 +1922,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.DeviceRegistry getDeviceRegistry(
         com.google.cloud.iot.v1.GetDeviceRegistryRequest request) {
       return blockingUnaryCall(
-          getChannel(), getGetDeviceRegistryMethod(), getCallOptions(), request);
+          getChannel(), getGetDeviceRegistryMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1752,7 +1935,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.DeviceRegistry updateDeviceRegistry(
         com.google.cloud.iot.v1.UpdateDeviceRegistryRequest request) {
       return blockingUnaryCall(
-          getChannel(), getUpdateDeviceRegistryMethod(), getCallOptions(), request);
+          getChannel(), getUpdateDeviceRegistryMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1765,7 +1948,7 @@ public final class DeviceManagerGrpc {
     public com.google.protobuf.Empty deleteDeviceRegistry(
         com.google.cloud.iot.v1.DeleteDeviceRegistryRequest request) {
       return blockingUnaryCall(
-          getChannel(), getDeleteDeviceRegistryMethod(), getCallOptions(), request);
+          getChannel(), getDeleteDeviceRegistryMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1778,7 +1961,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.ListDeviceRegistriesResponse listDeviceRegistries(
         com.google.cloud.iot.v1.ListDeviceRegistriesRequest request) {
       return blockingUnaryCall(
-          getChannel(), getListDeviceRegistriesMethod(), getCallOptions(), request);
+          getChannel(), getListDeviceRegistriesMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1790,7 +1973,8 @@ public final class DeviceManagerGrpc {
      */
     public com.google.cloud.iot.v1.Device createDevice(
         com.google.cloud.iot.v1.CreateDeviceRequest request) {
-      return blockingUnaryCall(getChannel(), getCreateDeviceMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getCreateDeviceMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1802,7 +1986,7 @@ public final class DeviceManagerGrpc {
      */
     public com.google.cloud.iot.v1.Device getDevice(
         com.google.cloud.iot.v1.GetDeviceRequest request) {
-      return blockingUnaryCall(getChannel(), getGetDeviceMethod(), getCallOptions(), request);
+      return blockingUnaryCall(getChannel(), getGetDeviceMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1814,7 +1998,8 @@ public final class DeviceManagerGrpc {
      */
     public com.google.cloud.iot.v1.Device updateDevice(
         com.google.cloud.iot.v1.UpdateDeviceRequest request) {
-      return blockingUnaryCall(getChannel(), getUpdateDeviceMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getUpdateDeviceMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1826,7 +2011,8 @@ public final class DeviceManagerGrpc {
      */
     public com.google.protobuf.Empty deleteDevice(
         com.google.cloud.iot.v1.DeleteDeviceRequest request) {
-      return blockingUnaryCall(getChannel(), getDeleteDeviceMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getDeleteDeviceMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1838,7 +2024,8 @@ public final class DeviceManagerGrpc {
      */
     public com.google.cloud.iot.v1.ListDevicesResponse listDevices(
         com.google.cloud.iot.v1.ListDevicesRequest request) {
-      return blockingUnaryCall(getChannel(), getListDevicesMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getListDevicesMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1853,7 +2040,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.DeviceConfig modifyCloudToDeviceConfig(
         com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest request) {
       return blockingUnaryCall(
-          getChannel(), getModifyCloudToDeviceConfigMethod(), getCallOptions(), request);
+          getChannel(), getModifyCloudToDeviceConfigMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1867,7 +2054,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse listDeviceConfigVersions(
         com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest request) {
       return blockingUnaryCall(
-          getChannel(), getListDeviceConfigVersionsMethod(), getCallOptions(), request);
+          getChannel(), getListDeviceConfigVersionsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1881,7 +2068,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.ListDeviceStatesResponse listDeviceStates(
         com.google.cloud.iot.v1.ListDeviceStatesRequest request) {
       return blockingUnaryCall(
-          getChannel(), getListDeviceStatesMethod(), getCallOptions(), request);
+          getChannel(), getListDeviceStatesMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1893,7 +2080,8 @@ public final class DeviceManagerGrpc {
      * </pre>
      */
     public com.google.iam.v1.Policy setIamPolicy(com.google.iam.v1.SetIamPolicyRequest request) {
-      return blockingUnaryCall(getChannel(), getSetIamPolicyMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getSetIamPolicyMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1906,7 +2094,8 @@ public final class DeviceManagerGrpc {
      * </pre>
      */
     public com.google.iam.v1.Policy getIamPolicy(com.google.iam.v1.GetIamPolicyRequest request) {
-      return blockingUnaryCall(getChannel(), getGetIamPolicyMethod(), getCallOptions(), request);
+      return blockingUnaryCall(
+          getChannel(), getGetIamPolicyMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1921,7 +2110,7 @@ public final class DeviceManagerGrpc {
     public com.google.iam.v1.TestIamPermissionsResponse testIamPermissions(
         com.google.iam.v1.TestIamPermissionsRequest request) {
       return blockingUnaryCall(
-          getChannel(), getTestIamPermissionsMethod(), getCallOptions(), request);
+          getChannel(), getTestIamPermissionsMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1946,7 +2135,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.SendCommandToDeviceResponse sendCommandToDevice(
         com.google.cloud.iot.v1.SendCommandToDeviceRequest request) {
       return blockingUnaryCall(
-          getChannel(), getSendCommandToDeviceMethod(), getCallOptions(), request);
+          getChannel(), getSendCommandToDeviceMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1959,7 +2148,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.BindDeviceToGatewayResponse bindDeviceToGateway(
         com.google.cloud.iot.v1.BindDeviceToGatewayRequest request) {
       return blockingUnaryCall(
-          getChannel(), getBindDeviceToGatewayMethod(), getCallOptions(), request);
+          getChannel(), getBindDeviceToGatewayMethodHelper(), getCallOptions(), request);
     }
 
     /**
@@ -1972,7 +2161,7 @@ public final class DeviceManagerGrpc {
     public com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse unbindDeviceFromGateway(
         com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest request) {
       return blockingUnaryCall(
-          getChannel(), getUnbindDeviceFromGatewayMethod(), getCallOptions(), request);
+          getChannel(), getUnbindDeviceFromGatewayMethodHelper(), getCallOptions(), request);
     }
   }
 
@@ -1984,7 +2173,11 @@ public final class DeviceManagerGrpc {
    * </pre>
    */
   public static final class DeviceManagerFutureStub
-      extends io.grpc.stub.AbstractFutureStub<DeviceManagerFutureStub> {
+      extends io.grpc.stub.AbstractStub<DeviceManagerFutureStub> {
+    private DeviceManagerFutureStub(io.grpc.Channel channel) {
+      super(channel);
+    }
+
     private DeviceManagerFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -2006,7 +2199,7 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.DeviceRegistry>
         createDeviceRegistry(com.google.cloud.iot.v1.CreateDeviceRegistryRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getCreateDeviceRegistryMethod(), getCallOptions()), request);
+          getChannel().newCall(getCreateDeviceRegistryMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2020,7 +2213,7 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.DeviceRegistry>
         getDeviceRegistry(com.google.cloud.iot.v1.GetDeviceRegistryRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getGetDeviceRegistryMethod(), getCallOptions()), request);
+          getChannel().newCall(getGetDeviceRegistryMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2034,7 +2227,7 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.DeviceRegistry>
         updateDeviceRegistry(com.google.cloud.iot.v1.UpdateDeviceRegistryRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getUpdateDeviceRegistryMethod(), getCallOptions()), request);
+          getChannel().newCall(getUpdateDeviceRegistryMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2047,7 +2240,7 @@ public final class DeviceManagerGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteDeviceRegistry(com.google.cloud.iot.v1.DeleteDeviceRegistryRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getDeleteDeviceRegistryMethod(), getCallOptions()), request);
+          getChannel().newCall(getDeleteDeviceRegistryMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2061,7 +2254,7 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
         listDeviceRegistries(com.google.cloud.iot.v1.ListDeviceRegistriesRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getListDeviceRegistriesMethod(), getCallOptions()), request);
+          getChannel().newCall(getListDeviceRegistriesMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2074,7 +2267,7 @@ public final class DeviceManagerGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.iot.v1.Device>
         createDevice(com.google.cloud.iot.v1.CreateDeviceRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getCreateDeviceMethod(), getCallOptions()), request);
+          getChannel().newCall(getCreateDeviceMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2086,7 +2279,8 @@ public final class DeviceManagerGrpc {
      */
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.iot.v1.Device>
         getDevice(com.google.cloud.iot.v1.GetDeviceRequest request) {
-      return futureUnaryCall(getChannel().newCall(getGetDeviceMethod(), getCallOptions()), request);
+      return futureUnaryCall(
+          getChannel().newCall(getGetDeviceMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2099,7 +2293,7 @@ public final class DeviceManagerGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.iot.v1.Device>
         updateDevice(com.google.cloud.iot.v1.UpdateDeviceRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getUpdateDeviceMethod(), getCallOptions()), request);
+          getChannel().newCall(getUpdateDeviceMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2112,7 +2306,7 @@ public final class DeviceManagerGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteDevice(com.google.cloud.iot.v1.DeleteDeviceRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getDeleteDeviceMethod(), getCallOptions()), request);
+          getChannel().newCall(getDeleteDeviceMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2126,7 +2320,7 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.ListDevicesResponse>
         listDevices(com.google.cloud.iot.v1.ListDevicesRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getListDevicesMethod(), getCallOptions()), request);
+          getChannel().newCall(getListDevicesMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2142,7 +2336,8 @@ public final class DeviceManagerGrpc {
         modifyCloudToDeviceConfig(
             com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getModifyCloudToDeviceConfigMethod(), getCallOptions()), request);
+          getChannel().newCall(getModifyCloudToDeviceConfigMethodHelper(), getCallOptions()),
+          request);
     }
 
     /**
@@ -2157,7 +2352,8 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
         listDeviceConfigVersions(com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getListDeviceConfigVersionsMethod(), getCallOptions()), request);
+          getChannel().newCall(getListDeviceConfigVersionsMethodHelper(), getCallOptions()),
+          request);
     }
 
     /**
@@ -2172,7 +2368,7 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.ListDeviceStatesResponse>
         listDeviceStates(com.google.cloud.iot.v1.ListDeviceStatesRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getListDeviceStatesMethod(), getCallOptions()), request);
+          getChannel().newCall(getListDeviceStatesMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2186,7 +2382,7 @@ public final class DeviceManagerGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.google.iam.v1.Policy>
         setIamPolicy(com.google.iam.v1.SetIamPolicyRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getSetIamPolicyMethod(), getCallOptions()), request);
+          getChannel().newCall(getSetIamPolicyMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2201,7 +2397,7 @@ public final class DeviceManagerGrpc {
     public com.google.common.util.concurrent.ListenableFuture<com.google.iam.v1.Policy>
         getIamPolicy(com.google.iam.v1.GetIamPolicyRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getGetIamPolicyMethod(), getCallOptions()), request);
+          getChannel().newCall(getGetIamPolicyMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2217,7 +2413,7 @@ public final class DeviceManagerGrpc {
             com.google.iam.v1.TestIamPermissionsResponse>
         testIamPermissions(com.google.iam.v1.TestIamPermissionsRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getTestIamPermissionsMethod(), getCallOptions()), request);
+          getChannel().newCall(getTestIamPermissionsMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2243,7 +2439,7 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.SendCommandToDeviceResponse>
         sendCommandToDevice(com.google.cloud.iot.v1.SendCommandToDeviceRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getSendCommandToDeviceMethod(), getCallOptions()), request);
+          getChannel().newCall(getSendCommandToDeviceMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2257,7 +2453,7 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
         bindDeviceToGateway(com.google.cloud.iot.v1.BindDeviceToGatewayRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getBindDeviceToGatewayMethod(), getCallOptions()), request);
+          getChannel().newCall(getBindDeviceToGatewayMethodHelper(), getCallOptions()), request);
     }
 
     /**
@@ -2271,7 +2467,8 @@ public final class DeviceManagerGrpc {
             com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
         unbindDeviceFromGateway(com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(getUnbindDeviceFromGatewayMethod(), getCallOptions()), request);
+          getChannel().newCall(getUnbindDeviceFromGatewayMethodHelper(), getCallOptions()),
+          request);
     }
   }
 
@@ -2483,25 +2680,25 @@ public final class DeviceManagerGrpc {
               result =
                   io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
                       .setSchemaDescriptor(new DeviceManagerFileDescriptorSupplier())
-                      .addMethod(getCreateDeviceRegistryMethod())
-                      .addMethod(getGetDeviceRegistryMethod())
-                      .addMethod(getUpdateDeviceRegistryMethod())
-                      .addMethod(getDeleteDeviceRegistryMethod())
-                      .addMethod(getListDeviceRegistriesMethod())
-                      .addMethod(getCreateDeviceMethod())
-                      .addMethod(getGetDeviceMethod())
-                      .addMethod(getUpdateDeviceMethod())
-                      .addMethod(getDeleteDeviceMethod())
-                      .addMethod(getListDevicesMethod())
-                      .addMethod(getModifyCloudToDeviceConfigMethod())
-                      .addMethod(getListDeviceConfigVersionsMethod())
-                      .addMethod(getListDeviceStatesMethod())
-                      .addMethod(getSetIamPolicyMethod())
-                      .addMethod(getGetIamPolicyMethod())
-                      .addMethod(getTestIamPermissionsMethod())
-                      .addMethod(getSendCommandToDeviceMethod())
-                      .addMethod(getBindDeviceToGatewayMethod())
-                      .addMethod(getUnbindDeviceFromGatewayMethod())
+                      .addMethod(getCreateDeviceRegistryMethodHelper())
+                      .addMethod(getGetDeviceRegistryMethodHelper())
+                      .addMethod(getUpdateDeviceRegistryMethodHelper())
+                      .addMethod(getDeleteDeviceRegistryMethodHelper())
+                      .addMethod(getListDeviceRegistriesMethodHelper())
+                      .addMethod(getCreateDeviceMethodHelper())
+                      .addMethod(getGetDeviceMethodHelper())
+                      .addMethod(getUpdateDeviceMethodHelper())
+                      .addMethod(getDeleteDeviceMethodHelper())
+                      .addMethod(getListDevicesMethodHelper())
+                      .addMethod(getModifyCloudToDeviceConfigMethodHelper())
+                      .addMethod(getListDeviceConfigVersionsMethodHelper())
+                      .addMethod(getListDeviceStatesMethodHelper())
+                      .addMethod(getSetIamPolicyMethodHelper())
+                      .addMethod(getGetIamPolicyMethodHelper())
+                      .addMethod(getTestIamPermissionsMethodHelper())
+                      .addMethod(getSendCommandToDeviceMethodHelper())
+                      .addMethod(getBindDeviceToGatewayMethodHelper())
+                      .addMethod(getUnbindDeviceFromGatewayMethodHelper())
                       .build();
         }
       }
