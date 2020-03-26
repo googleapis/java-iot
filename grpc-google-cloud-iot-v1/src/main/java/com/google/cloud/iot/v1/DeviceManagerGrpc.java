@@ -894,19 +894,43 @@ public final class DeviceManagerGrpc {
 
   /** Creates a new async stub that supports all call types for the service */
   public static DeviceManagerStub newStub(io.grpc.Channel channel) {
-    return new DeviceManagerStub(channel);
+    io.grpc.stub.AbstractStub.StubFactory<DeviceManagerStub> factory =
+        new io.grpc.stub.AbstractStub.StubFactory<DeviceManagerStub>() {
+          @java.lang.Override
+          public DeviceManagerStub newStub(
+              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+            return new DeviceManagerStub(channel, callOptions);
+          }
+        };
+    return DeviceManagerStub.newStub(factory, channel);
   }
 
   /**
    * Creates a new blocking-style stub that supports unary and streaming output calls on the service
    */
   public static DeviceManagerBlockingStub newBlockingStub(io.grpc.Channel channel) {
-    return new DeviceManagerBlockingStub(channel);
+    io.grpc.stub.AbstractStub.StubFactory<DeviceManagerBlockingStub> factory =
+        new io.grpc.stub.AbstractStub.StubFactory<DeviceManagerBlockingStub>() {
+          @java.lang.Override
+          public DeviceManagerBlockingStub newStub(
+              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+            return new DeviceManagerBlockingStub(channel, callOptions);
+          }
+        };
+    return DeviceManagerBlockingStub.newStub(factory, channel);
   }
 
   /** Creates a new ListenableFuture-style stub that supports unary calls on the service */
   public static DeviceManagerFutureStub newFutureStub(io.grpc.Channel channel) {
-    return new DeviceManagerFutureStub(channel);
+    io.grpc.stub.AbstractStub.StubFactory<DeviceManagerFutureStub> factory =
+        new io.grpc.stub.AbstractStub.StubFactory<DeviceManagerFutureStub>() {
+          @java.lang.Override
+          public DeviceManagerFutureStub newStub(
+              io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+            return new DeviceManagerFutureStub(channel, callOptions);
+          }
+        };
+    return DeviceManagerFutureStub.newStub(factory, channel);
   }
 
   /**
@@ -1331,11 +1355,8 @@ public final class DeviceManagerGrpc {
    * Internet of Things (IoT) service. Securely connect and manage IoT devices.
    * </pre>
    */
-  public static final class DeviceManagerStub extends io.grpc.stub.AbstractStub<DeviceManagerStub> {
-    private DeviceManagerStub(io.grpc.Channel channel) {
-      super(channel);
-    }
-
+  public static final class DeviceManagerStub
+      extends io.grpc.stub.AbstractAsyncStub<DeviceManagerStub> {
     private DeviceManagerStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -1684,11 +1705,7 @@ public final class DeviceManagerGrpc {
    * </pre>
    */
   public static final class DeviceManagerBlockingStub
-      extends io.grpc.stub.AbstractStub<DeviceManagerBlockingStub> {
-    private DeviceManagerBlockingStub(io.grpc.Channel channel) {
-      super(channel);
-    }
-
+      extends io.grpc.stub.AbstractBlockingStub<DeviceManagerBlockingStub> {
     private DeviceManagerBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
@@ -1967,11 +1984,7 @@ public final class DeviceManagerGrpc {
    * </pre>
    */
   public static final class DeviceManagerFutureStub
-      extends io.grpc.stub.AbstractStub<DeviceManagerFutureStub> {
-    private DeviceManagerFutureStub(io.grpc.Channel channel) {
-      super(channel);
-    }
-
+      extends io.grpc.stub.AbstractFutureStub<DeviceManagerFutureStub> {
     private DeviceManagerFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
