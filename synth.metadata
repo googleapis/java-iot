@@ -1,6 +1,13 @@
 {
-  "updateTime": "2020-04-06T23:41:24.919331Z",
+  "updateTime": "2020-04-09T01:08:47.987436Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/java-iot.git",
+        "sha": "a39c6866c31abe7bdf31167fffbcda75b536df8a"
+      }
+    },
     {
       "git": {
         "name": "googleapis",
