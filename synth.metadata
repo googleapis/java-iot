@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-iot.git",
-        "sha": "bfca2b58ea59e15b1cb9b9843494ab09b4841f4d"
+        "sha": "b66fb38bd596f0240f040a93b3a17e3e1f716055"
       }
     },
     {
