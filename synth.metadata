@@ -4,15 +4,15 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-iot.git",
-        "sha": "df5d929f4a5a253d5d60537b6bef09412303c337"
+        "sha": "3e386a8fc2fbe53b35aec3ac9aa98985cdd2fc57"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "8d582832ea028336dd285d62446cb37dbe228fa1",
-        "internalRef": "322642677"
+        "sha": "b11a87f3b54be3a5e42c15020ee1e0781f86da90",
+        "internalRef": "344134135"
       }
     },
     {
