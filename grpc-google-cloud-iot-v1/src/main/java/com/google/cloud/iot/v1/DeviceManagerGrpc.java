@@ -22,7 +22,13 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/** */
+/**
+ *
+ *
+ * <pre>
+ * Internet of Things (IoT) service. Securely connect and manage IoT devices.
+ * </pre>
+ */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/iot/v1/device_manager.proto")
@@ -927,38 +933,74 @@ public final class DeviceManagerGrpc {
     return DeviceManagerFutureStub.newStub(factory, channel);
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Internet of Things (IoT) service. Securely connect and manage IoT devices.
+   * </pre>
+   */
   public abstract static class DeviceManagerImplBase implements io.grpc.BindableService {
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a device registry that contains devices.
+     * </pre>
+     */
     public void createDeviceRegistry(
         com.google.cloud.iot.v1.CreateDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateDeviceRegistryMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets a device registry configuration.
+     * </pre>
+     */
     public void getDeviceRegistry(
         com.google.cloud.iot.v1.GetDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
       asyncUnimplementedUnaryCall(getGetDeviceRegistryMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a device registry configuration.
+     * </pre>
+     */
     public void updateDeviceRegistry(
         com.google.cloud.iot.v1.UpdateDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateDeviceRegistryMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a device registry configuration.
+     * </pre>
+     */
     public void deleteDeviceRegistry(
         com.google.cloud.iot.v1.DeleteDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteDeviceRegistryMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists device registries.
+     * </pre>
+     */
     public void listDeviceRegistries(
         com.google.cloud.iot.v1.ListDeviceRegistriesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
@@ -966,49 +1008,94 @@ public final class DeviceManagerGrpc {
       asyncUnimplementedUnaryCall(getListDeviceRegistriesMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a device in a device registry.
+     * </pre>
+     */
     public void createDevice(
         com.google.cloud.iot.v1.CreateDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateDeviceMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets details about a device.
+     * </pre>
+     */
     public void getDevice(
         com.google.cloud.iot.v1.GetDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
       asyncUnimplementedUnaryCall(getGetDeviceMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a device.
+     * </pre>
+     */
     public void updateDevice(
         com.google.cloud.iot.v1.UpdateDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
       asyncUnimplementedUnaryCall(getUpdateDeviceMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a device.
+     * </pre>
+     */
     public void deleteDevice(
         com.google.cloud.iot.v1.DeleteDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteDeviceMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * List devices in a device registry.
+     * </pre>
+     */
     public void listDevices(
         com.google.cloud.iot.v1.ListDevicesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDevicesResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getListDevicesMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Modifies the configuration for the device, which is eventually sent from
+     * the Cloud IoT Core servers. Returns the modified configuration version and
+     * its metadata.
+     * </pre>
+     */
     public void modifyCloudToDeviceConfig(
         com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceConfig> responseObserver) {
       asyncUnimplementedUnaryCall(getModifyCloudToDeviceConfigMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists the last few versions of the device configuration in descending
+     * order (i.e.: newest first).
+     * </pre>
+     */
     public void listDeviceConfigVersions(
         com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
@@ -1016,7 +1103,14 @@ public final class DeviceManagerGrpc {
       asyncUnimplementedUnaryCall(getListDeviceConfigVersionsMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists the last few versions of the device state in descending order (i.e.:
+     * newest first).
+     * </pre>
+     */
     public void listDeviceStates(
         com.google.cloud.iot.v1.ListDeviceStatesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceStatesResponse>
@@ -1024,21 +1118,44 @@ public final class DeviceManagerGrpc {
       asyncUnimplementedUnaryCall(getListDeviceStatesMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Sets the access control policy on the specified resource. Replaces any
+     * existing policy.
+     * </pre>
+     */
     public void setIamPolicy(
         com.google.iam.v1.SetIamPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.Policy> responseObserver) {
       asyncUnimplementedUnaryCall(getSetIamPolicyMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the access control policy for a resource.
+     * Returns an empty policy if the resource exists and does not have a policy
+     * set.
+     * </pre>
+     */
     public void getIamPolicy(
         com.google.iam.v1.GetIamPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.Policy> responseObserver) {
       asyncUnimplementedUnaryCall(getGetIamPolicyMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns permissions that a caller has on the specified resource.
+     * If the resource does not exist, this will return an empty set of
+     * permissions, not a NOT_FOUND error.
+     * </pre>
+     */
     public void testIamPermissions(
         com.google.iam.v1.TestIamPermissionsRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.TestIamPermissionsResponse>
@@ -1046,7 +1163,25 @@ public final class DeviceManagerGrpc {
       asyncUnimplementedUnaryCall(getTestIamPermissionsMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Sends a command to the specified device. In order for a device to be able
+     * to receive commands, it must:
+     * 1) be connected to Cloud IoT Core using the MQTT protocol, and
+     * 2) be subscribed to the group of MQTT topics specified by
+     *    /devices/{device-id}/commands/#. This subscription will receive commands
+     *    at the top-level topic /devices/{device-id}/commands as well as commands
+     *    for subfolders, like /devices/{device-id}/commands/subfolder.
+     *    Note that subscribing to specific subfolders is not supported.
+     * If the command could not be delivered to the device, this method will
+     * return an error; in particular, if the device is not subscribed, this
+     * method will return FAILED_PRECONDITION. Otherwise, this method will
+     * return OK. If the subscription is QoS 1, at least once delivery will be
+     * guaranteed; for QoS 0, no acknowledgment will be expected from the device.
+     * </pre>
+     */
     public void sendCommandToDevice(
         com.google.cloud.iot.v1.SendCommandToDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.SendCommandToDeviceResponse>
@@ -1054,7 +1189,13 @@ public final class DeviceManagerGrpc {
       asyncUnimplementedUnaryCall(getSendCommandToDeviceMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Associates the device with the gateway.
+     * </pre>
+     */
     public void bindDeviceToGateway(
         com.google.cloud.iot.v1.BindDeviceToGatewayRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
@@ -1062,7 +1203,13 @@ public final class DeviceManagerGrpc {
       asyncUnimplementedUnaryCall(getBindDeviceToGatewayMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes the association between the device and the gateway.
+     * </pre>
+     */
     public void unbindDeviceFromGateway(
         com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
@@ -1201,7 +1348,13 @@ public final class DeviceManagerGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Internet of Things (IoT) service. Securely connect and manage IoT devices.
+   * </pre>
+   */
   public static final class DeviceManagerStub
       extends io.grpc.stub.AbstractAsyncStub<DeviceManagerStub> {
     private DeviceManagerStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -1213,7 +1366,13 @@ public final class DeviceManagerGrpc {
       return new DeviceManagerStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a device registry that contains devices.
+     * </pre>
+     */
     public void createDeviceRegistry(
         com.google.cloud.iot.v1.CreateDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
@@ -1223,7 +1382,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets a device registry configuration.
+     * </pre>
+     */
     public void getDeviceRegistry(
         com.google.cloud.iot.v1.GetDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
@@ -1233,7 +1398,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a device registry configuration.
+     * </pre>
+     */
     public void updateDeviceRegistry(
         com.google.cloud.iot.v1.UpdateDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceRegistry> responseObserver) {
@@ -1243,7 +1414,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a device registry configuration.
+     * </pre>
+     */
     public void deleteDeviceRegistry(
         com.google.cloud.iot.v1.DeleteDeviceRegistryRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -1253,7 +1430,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists device registries.
+     * </pre>
+     */
     public void listDeviceRegistries(
         com.google.cloud.iot.v1.ListDeviceRegistriesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
@@ -1264,7 +1447,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a device in a device registry.
+     * </pre>
+     */
     public void createDevice(
         com.google.cloud.iot.v1.CreateDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
@@ -1274,7 +1463,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets details about a device.
+     * </pre>
+     */
     public void getDevice(
         com.google.cloud.iot.v1.GetDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
@@ -1282,7 +1477,13 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getGetDeviceMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a device.
+     * </pre>
+     */
     public void updateDevice(
         com.google.cloud.iot.v1.UpdateDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.Device> responseObserver) {
@@ -1292,7 +1493,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a device.
+     * </pre>
+     */
     public void deleteDevice(
         com.google.cloud.iot.v1.DeleteDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -1302,7 +1509,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * List devices in a device registry.
+     * </pre>
+     */
     public void listDevices(
         com.google.cloud.iot.v1.ListDevicesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDevicesResponse> responseObserver) {
@@ -1312,7 +1525,15 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Modifies the configuration for the device, which is eventually sent from
+     * the Cloud IoT Core servers. Returns the modified configuration version and
+     * its metadata.
+     * </pre>
+     */
     public void modifyCloudToDeviceConfig(
         com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.DeviceConfig> responseObserver) {
@@ -1322,7 +1543,14 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists the last few versions of the device configuration in descending
+     * order (i.e.: newest first).
+     * </pre>
+     */
     public void listDeviceConfigVersions(
         com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
@@ -1333,7 +1561,14 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists the last few versions of the device state in descending order (i.e.:
+     * newest first).
+     * </pre>
+     */
     public void listDeviceStates(
         com.google.cloud.iot.v1.ListDeviceStatesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.ListDeviceStatesResponse>
@@ -1344,7 +1579,14 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Sets the access control policy on the specified resource. Replaces any
+     * existing policy.
+     * </pre>
+     */
     public void setIamPolicy(
         com.google.iam.v1.SetIamPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.Policy> responseObserver) {
@@ -1354,7 +1596,15 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the access control policy for a resource.
+     * Returns an empty policy if the resource exists and does not have a policy
+     * set.
+     * </pre>
+     */
     public void getIamPolicy(
         com.google.iam.v1.GetIamPolicyRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.Policy> responseObserver) {
@@ -1364,7 +1614,15 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns permissions that a caller has on the specified resource.
+     * If the resource does not exist, this will return an empty set of
+     * permissions, not a NOT_FOUND error.
+     * </pre>
+     */
     public void testIamPermissions(
         com.google.iam.v1.TestIamPermissionsRequest request,
         io.grpc.stub.StreamObserver<com.google.iam.v1.TestIamPermissionsResponse>
@@ -1375,7 +1633,25 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Sends a command to the specified device. In order for a device to be able
+     * to receive commands, it must:
+     * 1) be connected to Cloud IoT Core using the MQTT protocol, and
+     * 2) be subscribed to the group of MQTT topics specified by
+     *    /devices/{device-id}/commands/#. This subscription will receive commands
+     *    at the top-level topic /devices/{device-id}/commands as well as commands
+     *    for subfolders, like /devices/{device-id}/commands/subfolder.
+     *    Note that subscribing to specific subfolders is not supported.
+     * If the command could not be delivered to the device, this method will
+     * return an error; in particular, if the device is not subscribed, this
+     * method will return FAILED_PRECONDITION. Otherwise, this method will
+     * return OK. If the subscription is QoS 1, at least once delivery will be
+     * guaranteed; for QoS 0, no acknowledgment will be expected from the device.
+     * </pre>
+     */
     public void sendCommandToDevice(
         com.google.cloud.iot.v1.SendCommandToDeviceRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.SendCommandToDeviceResponse>
@@ -1386,7 +1662,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Associates the device with the gateway.
+     * </pre>
+     */
     public void bindDeviceToGateway(
         com.google.cloud.iot.v1.BindDeviceToGatewayRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
@@ -1397,7 +1679,13 @@ public final class DeviceManagerGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes the association between the device and the gateway.
+     * </pre>
+     */
     public void unbindDeviceFromGateway(
         com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
@@ -1409,7 +1697,13 @@ public final class DeviceManagerGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Internet of Things (IoT) service. Securely connect and manage IoT devices.
+   * </pre>
+   */
   public static final class DeviceManagerBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<DeviceManagerBlockingStub> {
     private DeviceManagerBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -1422,124 +1716,259 @@ public final class DeviceManagerGrpc {
       return new DeviceManagerBlockingStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a device registry that contains devices.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.DeviceRegistry createDeviceRegistry(
         com.google.cloud.iot.v1.CreateDeviceRegistryRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateDeviceRegistryMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets a device registry configuration.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.DeviceRegistry getDeviceRegistry(
         com.google.cloud.iot.v1.GetDeviceRegistryRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetDeviceRegistryMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a device registry configuration.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.DeviceRegistry updateDeviceRegistry(
         com.google.cloud.iot.v1.UpdateDeviceRegistryRequest request) {
       return blockingUnaryCall(
           getChannel(), getUpdateDeviceRegistryMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a device registry configuration.
+     * </pre>
+     */
     public com.google.protobuf.Empty deleteDeviceRegistry(
         com.google.cloud.iot.v1.DeleteDeviceRegistryRequest request) {
       return blockingUnaryCall(
           getChannel(), getDeleteDeviceRegistryMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists device registries.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.ListDeviceRegistriesResponse listDeviceRegistries(
         com.google.cloud.iot.v1.ListDeviceRegistriesRequest request) {
       return blockingUnaryCall(
           getChannel(), getListDeviceRegistriesMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a device in a device registry.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.Device createDevice(
         com.google.cloud.iot.v1.CreateDeviceRequest request) {
       return blockingUnaryCall(getChannel(), getCreateDeviceMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets details about a device.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.Device getDevice(
         com.google.cloud.iot.v1.GetDeviceRequest request) {
       return blockingUnaryCall(getChannel(), getGetDeviceMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a device.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.Device updateDevice(
         com.google.cloud.iot.v1.UpdateDeviceRequest request) {
       return blockingUnaryCall(getChannel(), getUpdateDeviceMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a device.
+     * </pre>
+     */
     public com.google.protobuf.Empty deleteDevice(
         com.google.cloud.iot.v1.DeleteDeviceRequest request) {
       return blockingUnaryCall(getChannel(), getDeleteDeviceMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * List devices in a device registry.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.ListDevicesResponse listDevices(
         com.google.cloud.iot.v1.ListDevicesRequest request) {
       return blockingUnaryCall(getChannel(), getListDevicesMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Modifies the configuration for the device, which is eventually sent from
+     * the Cloud IoT Core servers. Returns the modified configuration version and
+     * its metadata.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.DeviceConfig modifyCloudToDeviceConfig(
         com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest request) {
       return blockingUnaryCall(
           getChannel(), getModifyCloudToDeviceConfigMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists the last few versions of the device configuration in descending
+     * order (i.e.: newest first).
+     * </pre>
+     */
     public com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse listDeviceConfigVersions(
         com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest request) {
       return blockingUnaryCall(
           getChannel(), getListDeviceConfigVersionsMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists the last few versions of the device state in descending order (i.e.:
+     * newest first).
+     * </pre>
+     */
     public com.google.cloud.iot.v1.ListDeviceStatesResponse listDeviceStates(
         com.google.cloud.iot.v1.ListDeviceStatesRequest request) {
       return blockingUnaryCall(
           getChannel(), getListDeviceStatesMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Sets the access control policy on the specified resource. Replaces any
+     * existing policy.
+     * </pre>
+     */
     public com.google.iam.v1.Policy setIamPolicy(com.google.iam.v1.SetIamPolicyRequest request) {
       return blockingUnaryCall(getChannel(), getSetIamPolicyMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the access control policy for a resource.
+     * Returns an empty policy if the resource exists and does not have a policy
+     * set.
+     * </pre>
+     */
     public com.google.iam.v1.Policy getIamPolicy(com.google.iam.v1.GetIamPolicyRequest request) {
       return blockingUnaryCall(getChannel(), getGetIamPolicyMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns permissions that a caller has on the specified resource.
+     * If the resource does not exist, this will return an empty set of
+     * permissions, not a NOT_FOUND error.
+     * </pre>
+     */
     public com.google.iam.v1.TestIamPermissionsResponse testIamPermissions(
         com.google.iam.v1.TestIamPermissionsRequest request) {
       return blockingUnaryCall(
           getChannel(), getTestIamPermissionsMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Sends a command to the specified device. In order for a device to be able
+     * to receive commands, it must:
+     * 1) be connected to Cloud IoT Core using the MQTT protocol, and
+     * 2) be subscribed to the group of MQTT topics specified by
+     *    /devices/{device-id}/commands/#. This subscription will receive commands
+     *    at the top-level topic /devices/{device-id}/commands as well as commands
+     *    for subfolders, like /devices/{device-id}/commands/subfolder.
+     *    Note that subscribing to specific subfolders is not supported.
+     * If the command could not be delivered to the device, this method will
+     * return an error; in particular, if the device is not subscribed, this
+     * method will return FAILED_PRECONDITION. Otherwise, this method will
+     * return OK. If the subscription is QoS 1, at least once delivery will be
+     * guaranteed; for QoS 0, no acknowledgment will be expected from the device.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.SendCommandToDeviceResponse sendCommandToDevice(
         com.google.cloud.iot.v1.SendCommandToDeviceRequest request) {
       return blockingUnaryCall(
           getChannel(), getSendCommandToDeviceMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Associates the device with the gateway.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.BindDeviceToGatewayResponse bindDeviceToGateway(
         com.google.cloud.iot.v1.BindDeviceToGatewayRequest request) {
       return blockingUnaryCall(
           getChannel(), getBindDeviceToGatewayMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes the association between the device and the gateway.
+     * </pre>
+     */
     public com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse unbindDeviceFromGateway(
         com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest request) {
       return blockingUnaryCall(
@@ -1547,7 +1976,13 @@ public final class DeviceManagerGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * Internet of Things (IoT) service. Securely connect and manage IoT devices.
+   * </pre>
+   */
   public static final class DeviceManagerFutureStub
       extends io.grpc.stub.AbstractFutureStub<DeviceManagerFutureStub> {
     private DeviceManagerFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -1560,7 +1995,13 @@ public final class DeviceManagerGrpc {
       return new DeviceManagerFutureStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a device registry that contains devices.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.DeviceRegistry>
         createDeviceRegistry(com.google.cloud.iot.v1.CreateDeviceRegistryRequest request) {
@@ -1568,7 +2009,13 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getCreateDeviceRegistryMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets a device registry configuration.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.DeviceRegistry>
         getDeviceRegistry(com.google.cloud.iot.v1.GetDeviceRegistryRequest request) {
@@ -1576,7 +2023,13 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getGetDeviceRegistryMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a device registry configuration.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.DeviceRegistry>
         updateDeviceRegistry(com.google.cloud.iot.v1.UpdateDeviceRegistryRequest request) {
@@ -1584,14 +2037,26 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getUpdateDeviceRegistryMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a device registry configuration.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteDeviceRegistry(com.google.cloud.iot.v1.DeleteDeviceRegistryRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteDeviceRegistryMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists device registries.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.ListDeviceRegistriesResponse>
         listDeviceRegistries(com.google.cloud.iot.v1.ListDeviceRegistriesRequest request) {
@@ -1599,34 +2064,64 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getListDeviceRegistriesMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Creates a device in a device registry.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.iot.v1.Device>
         createDevice(com.google.cloud.iot.v1.CreateDeviceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateDeviceMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets details about a device.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.iot.v1.Device>
         getDevice(com.google.cloud.iot.v1.GetDeviceRequest request) {
       return futureUnaryCall(getChannel().newCall(getGetDeviceMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Updates a device.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.iot.v1.Device>
         updateDevice(com.google.cloud.iot.v1.UpdateDeviceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getUpdateDeviceMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes a device.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteDevice(com.google.cloud.iot.v1.DeleteDeviceRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteDeviceMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * List devices in a device registry.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.ListDevicesResponse>
         listDevices(com.google.cloud.iot.v1.ListDevicesRequest request) {
@@ -1634,7 +2129,15 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getListDevicesMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Modifies the configuration for the device, which is eventually sent from
+     * the Cloud IoT Core servers. Returns the modified configuration version and
+     * its metadata.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.cloud.iot.v1.DeviceConfig>
         modifyCloudToDeviceConfig(
             com.google.cloud.iot.v1.ModifyCloudToDeviceConfigRequest request) {
@@ -1642,7 +2145,14 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getModifyCloudToDeviceConfigMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists the last few versions of the device configuration in descending
+     * order (i.e.: newest first).
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.ListDeviceConfigVersionsResponse>
         listDeviceConfigVersions(com.google.cloud.iot.v1.ListDeviceConfigVersionsRequest request) {
@@ -1650,7 +2160,14 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getListDeviceConfigVersionsMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Lists the last few versions of the device state in descending order (i.e.:
+     * newest first).
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.ListDeviceStatesResponse>
         listDeviceStates(com.google.cloud.iot.v1.ListDeviceStatesRequest request) {
@@ -1658,21 +2175,44 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getListDeviceStatesMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Sets the access control policy on the specified resource. Replaces any
+     * existing policy.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.iam.v1.Policy>
         setIamPolicy(com.google.iam.v1.SetIamPolicyRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getSetIamPolicyMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Gets the access control policy for a resource.
+     * Returns an empty policy if the resource exists and does not have a policy
+     * set.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.google.iam.v1.Policy>
         getIamPolicy(com.google.iam.v1.GetIamPolicyRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getGetIamPolicyMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Returns permissions that a caller has on the specified resource.
+     * If the resource does not exist, this will return an empty set of
+     * permissions, not a NOT_FOUND error.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.iam.v1.TestIamPermissionsResponse>
         testIamPermissions(com.google.iam.v1.TestIamPermissionsRequest request) {
@@ -1680,7 +2220,25 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getTestIamPermissionsMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Sends a command to the specified device. In order for a device to be able
+     * to receive commands, it must:
+     * 1) be connected to Cloud IoT Core using the MQTT protocol, and
+     * 2) be subscribed to the group of MQTT topics specified by
+     *    /devices/{device-id}/commands/#. This subscription will receive commands
+     *    at the top-level topic /devices/{device-id}/commands as well as commands
+     *    for subfolders, like /devices/{device-id}/commands/subfolder.
+     *    Note that subscribing to specific subfolders is not supported.
+     * If the command could not be delivered to the device, this method will
+     * return an error; in particular, if the device is not subscribed, this
+     * method will return FAILED_PRECONDITION. Otherwise, this method will
+     * return OK. If the subscription is QoS 1, at least once delivery will be
+     * guaranteed; for QoS 0, no acknowledgment will be expected from the device.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.SendCommandToDeviceResponse>
         sendCommandToDevice(com.google.cloud.iot.v1.SendCommandToDeviceRequest request) {
@@ -1688,7 +2246,13 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getSendCommandToDeviceMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Associates the device with the gateway.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.BindDeviceToGatewayResponse>
         bindDeviceToGateway(com.google.cloud.iot.v1.BindDeviceToGatewayRequest request) {
@@ -1696,7 +2260,13 @@ public final class DeviceManagerGrpc {
           getChannel().newCall(getBindDeviceToGatewayMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Deletes the association between the device and the gateway.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iot.v1.UnbindDeviceFromGatewayResponse>
         unbindDeviceFromGateway(com.google.cloud.iot.v1.UnbindDeviceFromGatewayRequest request) {
