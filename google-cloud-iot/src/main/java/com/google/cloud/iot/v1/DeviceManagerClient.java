@@ -5,7 +5,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     https://www.apache.org/licenses/LICENSE-2.0
+ *      https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.google.cloud.iot.v1;
 
 import com.google.api.core.ApiFunction;
@@ -42,24 +43,14 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Generated;
 
-// AUTO-GENERATED DOCUMENTATION AND SERVICE
+// AUTO-GENERATED DOCUMENTATION AND CLASS.
 /**
  * Service Description: Internet of Things (IoT) service. Securely connect and manage IoT devices.
  *
  * <p>This class provides the ability to make remote calls to the backing service through method
  * calls that map to API methods. Sample code to get started:
  *
- * <pre>
- * <code>
- * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
- *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
- *   DeviceRegistry deviceRegistry = DeviceRegistry.newBuilder().build();
- *   DeviceRegistry response = deviceManagerClient.createDeviceRegistry(parent, deviceRegistry);
- * }
- * </code>
- * </pre>
- *
- * <p>Note: close() needs to be called on the deviceManagerClient object to clean up resources such
+ * <p>Note: close() needs to be called on the DeviceManagerClient object to clean up resources such
  * as threads. In the example above, try-with-resources is used, which automatically calls close().
  *
  * <p>The surface of this class includes several types of Java methods for each of the API's
@@ -87,30 +78,26 @@ import javax.annotation.Generated;
  *
  * <p>To customize credentials:
  *
- * <pre>
- * <code>
+ * <pre>{@code
  * DeviceManagerSettings deviceManagerSettings =
  *     DeviceManagerSettings.newBuilder()
  *         .setCredentialsProvider(FixedCredentialsProvider.create(myCredentials))
  *         .build();
- * DeviceManagerClient deviceManagerClient =
- *     DeviceManagerClient.create(deviceManagerSettings);
- * </code>
- * </pre>
+ * DeviceManagerClient deviceManagerClient = DeviceManagerClient.create(deviceManagerSettings);
+ * }</pre>
  *
- * To customize the endpoint:
+ * <p>To customize the endpoint:
  *
- * <pre>
- * <code>
+ * <pre>{@code
  * DeviceManagerSettings deviceManagerSettings =
  *     DeviceManagerSettings.newBuilder().setEndpoint(myEndpoint).build();
- * DeviceManagerClient deviceManagerClient =
- *     DeviceManagerClient.create(deviceManagerSettings);
- * </code>
- * </pre>
+ * DeviceManagerClient deviceManagerClient = DeviceManagerClient.create(deviceManagerSettings);
+ * }</pre>
+ *
+ * <p>Please refer to the GitHub repository's samples for more quickstart code snippets.
  */
-@Generated("by gapic-generator")
 @BetaApi
+@Generated("by gapic-generator")
 public class DeviceManagerClient implements BackgroundResource {
   private final DeviceManagerSettings settings;
   private final DeviceManagerStub stub;
@@ -131,7 +118,7 @@ public class DeviceManagerClient implements BackgroundResource {
 
   /**
    * Constructs an instance of DeviceManagerClient, using the given stub for making calls. This is
-   * for advanced usage - prefer to use DeviceManagerSettings}.
+   * for advanced usage - prefer using create(DeviceManagerSettings).
    */
   @BetaApi("A restructuring of stub classes is planned, so this may break in the future")
   public static final DeviceManagerClient create(DeviceManagerStub stub) {
@@ -163,24 +150,15 @@ public class DeviceManagerClient implements BackgroundResource {
     return stub;
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Creates a device registry that contains devices.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-   *   DeviceRegistry deviceRegistry = DeviceRegistry.newBuilder().build();
-   *   DeviceRegistry response = deviceManagerClient.createDeviceRegistry(parent, deviceRegistry);
-   * }
-   * </code></pre>
-   *
    * @param parent Required. The project and cloud region where this device registry must be
    *     created. For example, `projects/example-project/locations/us-central1`.
-   * @param deviceRegistry Required. The device registry. The field `name` must be empty. The server
-   *     will generate that field from the device registry `id` provided and the `parent` field.
+   * @param device_registry Required. The device registry. The field `name` must be empty. The
+   *     server will generate that field from the device registry `id` provided and the `parent`
+   *     field.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final DeviceRegistry createDeviceRegistry(
@@ -193,24 +171,15 @@ public class DeviceManagerClient implements BackgroundResource {
     return createDeviceRegistry(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Creates a device registry that contains devices.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-   *   DeviceRegistry deviceRegistry = DeviceRegistry.newBuilder().build();
-   *   DeviceRegistry response = deviceManagerClient.createDeviceRegistry(parent.toString(), deviceRegistry);
-   * }
-   * </code></pre>
-   *
    * @param parent Required. The project and cloud region where this device registry must be
    *     created. For example, `projects/example-project/locations/us-central1`.
-   * @param deviceRegistry Required. The device registry. The field `name` must be empty. The server
-   *     will generate that field from the device registry `id` provided and the `parent` field.
+   * @param device_registry Required. The device registry. The field `name` must be empty. The
+   *     server will generate that field from the device registry `id` provided and the `parent`
+   *     field.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final DeviceRegistry createDeviceRegistry(String parent, DeviceRegistry deviceRegistry) {
@@ -222,23 +191,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return createDeviceRegistry(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Creates a device registry that contains devices.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-   *   DeviceRegistry deviceRegistry = DeviceRegistry.newBuilder().build();
-   *   CreateDeviceRegistryRequest request = CreateDeviceRegistryRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .setDeviceRegistry(deviceRegistry)
-   *     .build();
-   *   DeviceRegistry response = deviceManagerClient.createDeviceRegistry(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -247,43 +202,20 @@ public class DeviceManagerClient implements BackgroundResource {
     return createDeviceRegistryCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Creates a device registry that contains devices.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-   *   DeviceRegistry deviceRegistry = DeviceRegistry.newBuilder().build();
-   *   CreateDeviceRegistryRequest request = CreateDeviceRegistryRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .setDeviceRegistry(deviceRegistry)
-   *     .build();
-   *   ApiFuture&lt;DeviceRegistry&gt; future = deviceManagerClient.createDeviceRegistryCallable().futureCall(request);
-   *   // Do something
-   *   DeviceRegistry response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<CreateDeviceRegistryRequest, DeviceRegistry>
       createDeviceRegistryCallable() {
     return stub.createDeviceRegistryCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets a device registry configuration.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName name = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   DeviceRegistry response = deviceManagerClient.getDeviceRegistry(name);
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device registry. For example,
    *     `projects/example-project/locations/us-central1/registries/my-registry`.
@@ -297,18 +229,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return getDeviceRegistry(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets a device registry configuration.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName name = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   DeviceRegistry response = deviceManagerClient.getDeviceRegistry(name.toString());
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device registry. For example,
    *     `projects/example-project/locations/us-central1/registries/my-registry`.
@@ -319,21 +242,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return getDeviceRegistry(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets a device registry configuration.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName name = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   GetDeviceRegistryRequest request = GetDeviceRegistryRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   DeviceRegistry response = deviceManagerClient.getDeviceRegistry(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -342,46 +253,24 @@ public class DeviceManagerClient implements BackgroundResource {
     return getDeviceRegistryCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets a device registry configuration.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName name = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   GetDeviceRegistryRequest request = GetDeviceRegistryRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   ApiFuture&lt;DeviceRegistry&gt; future = deviceManagerClient.getDeviceRegistryCallable().futureCall(request);
-   *   // Do something
-   *   DeviceRegistry response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<GetDeviceRegistryRequest, DeviceRegistry> getDeviceRegistryCallable() {
     return stub.getDeviceRegistryCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Updates a device registry configuration.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceRegistry deviceRegistry = DeviceRegistry.newBuilder().build();
-   *   FieldMask updateMask = FieldMask.newBuilder().build();
-   *   DeviceRegistry response = deviceManagerClient.updateDeviceRegistry(deviceRegistry, updateMask);
-   * }
-   * </code></pre>
-   *
-   * @param deviceRegistry Required. The new values for the device registry. The `id` field must be
+   * @param device_registry Required. The new values for the device registry. The `id` field must be
    *     empty, and the `name` field must indicate the path of the resource. For example,
    *     `projects/example-project/locations/us-central1/registries/my-registry`.
-   * @param updateMask Required. Only updates the `device_registry` fields indicated by this mask.
+   * @param update_mask Required. Only updates the `device_registry` fields indicated by this mask.
    *     The field mask must not be empty, and it must not contain fields that are immutable or only
    *     set by the server. Mutable top-level fields: `event_notification_config`, `http_config`,
    *     `mqtt_config`, and `state_notification_config`.
@@ -397,23 +286,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return updateDeviceRegistry(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Updates a device registry configuration.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceRegistry deviceRegistry = DeviceRegistry.newBuilder().build();
-   *   FieldMask updateMask = FieldMask.newBuilder().build();
-   *   UpdateDeviceRegistryRequest request = UpdateDeviceRegistryRequest.newBuilder()
-   *     .setDeviceRegistry(deviceRegistry)
-   *     .setUpdateMask(updateMask)
-   *     .build();
-   *   DeviceRegistry response = deviceManagerClient.updateDeviceRegistry(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -422,43 +297,20 @@ public class DeviceManagerClient implements BackgroundResource {
     return updateDeviceRegistryCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Updates a device registry configuration.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceRegistry deviceRegistry = DeviceRegistry.newBuilder().build();
-   *   FieldMask updateMask = FieldMask.newBuilder().build();
-   *   UpdateDeviceRegistryRequest request = UpdateDeviceRegistryRequest.newBuilder()
-   *     .setDeviceRegistry(deviceRegistry)
-   *     .setUpdateMask(updateMask)
-   *     .build();
-   *   ApiFuture&lt;DeviceRegistry&gt; future = deviceManagerClient.updateDeviceRegistryCallable().futureCall(request);
-   *   // Do something
-   *   DeviceRegistry response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<UpdateDeviceRegistryRequest, DeviceRegistry>
       updateDeviceRegistryCallable() {
     return stub.updateDeviceRegistryCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes a device registry configuration.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName name = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   deviceManagerClient.deleteDeviceRegistry(name);
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device registry. For example,
    *     `projects/example-project/locations/us-central1/registries/my-registry`.
@@ -472,18 +324,9 @@ public class DeviceManagerClient implements BackgroundResource {
     deleteDeviceRegistry(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes a device registry configuration.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName name = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   deviceManagerClient.deleteDeviceRegistry(name.toString());
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device registry. For example,
    *     `projects/example-project/locations/us-central1/registries/my-registry`.
@@ -495,21 +338,9 @@ public class DeviceManagerClient implements BackgroundResource {
     deleteDeviceRegistry(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes a device registry configuration.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName name = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   DeleteDeviceRegistryRequest request = DeleteDeviceRegistryRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   deviceManagerClient.deleteDeviceRegistry(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -518,42 +349,19 @@ public class DeviceManagerClient implements BackgroundResource {
     deleteDeviceRegistryCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes a device registry configuration.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName name = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   DeleteDeviceRegistryRequest request = DeleteDeviceRegistryRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   ApiFuture&lt;Void&gt; future = deviceManagerClient.deleteDeviceRegistryCallable().futureCall(request);
-   *   // Do something
-   *   future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<DeleteDeviceRegistryRequest, Empty> deleteDeviceRegistryCallable() {
     return stub.deleteDeviceRegistryCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists device registries.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-   *   for (DeviceRegistry element : deviceManagerClient.listDeviceRegistries(parent).iterateAll()) {
-   *     // doThingsWith(element);
-   *   }
-   * }
-   * </code></pre>
    *
    * @param parent Required. The project and cloud region path. For example,
    *     `projects/example-project/locations/us-central1`.
@@ -567,20 +375,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDeviceRegistries(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists device registries.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-   *   for (DeviceRegistry element : deviceManagerClient.listDeviceRegistries(parent.toString()).iterateAll()) {
-   *     // doThingsWith(element);
-   *   }
-   * }
-   * </code></pre>
    *
    * @param parent Required. The project and cloud region path. For example,
    *     `projects/example-project/locations/us-central1`.
@@ -592,23 +389,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDeviceRegistries(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists device registries.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-   *   ListDeviceRegistriesRequest request = ListDeviceRegistriesRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .build();
-   *   for (DeviceRegistry element : deviceManagerClient.listDeviceRegistries(request).iterateAll()) {
-   *     // doThingsWith(element);
-   *   }
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -618,76 +401,31 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDeviceRegistriesPagedCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists device registries.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-   *   ListDeviceRegistriesRequest request = ListDeviceRegistriesRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .build();
-   *   ApiFuture&lt;ListDeviceRegistriesPagedResponse&gt; future = deviceManagerClient.listDeviceRegistriesPagedCallable().futureCall(request);
-   *   // Do something
-   *   for (DeviceRegistry element : future.get().iterateAll()) {
-   *     // doThingsWith(element);
-   *   }
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<ListDeviceRegistriesRequest, ListDeviceRegistriesPagedResponse>
       listDeviceRegistriesPagedCallable() {
     return stub.listDeviceRegistriesPagedCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists device registries.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   LocationName parent = LocationName.of("[PROJECT]", "[LOCATION]");
-   *   ListDeviceRegistriesRequest request = ListDeviceRegistriesRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .build();
-   *   while (true) {
-   *     ListDeviceRegistriesResponse response = deviceManagerClient.listDeviceRegistriesCallable().call(request);
-   *     for (DeviceRegistry element : response.getDeviceRegistriesList()) {
-   *       // doThingsWith(element);
-   *     }
-   *     String nextPageToken = response.getNextPageToken();
-   *     if (!Strings.isNullOrEmpty(nextPageToken)) {
-   *       request = request.toBuilder().setPageToken(nextPageToken).build();
-   *     } else {
-   *       break;
-   *     }
-   *   }
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<ListDeviceRegistriesRequest, ListDeviceRegistriesResponse>
       listDeviceRegistriesCallable() {
     return stub.listDeviceRegistriesCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Creates a device in a device registry.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   Device device = Device.newBuilder().build();
-   *   Device response = deviceManagerClient.createDevice(parent, device);
-   * }
-   * </code></pre>
    *
    * @param parent Required. The name of the device registry where this device should be created.
    *     For example, `projects/example-project/locations/us-central1/registries/my-registry`.
@@ -704,19 +442,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return createDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Creates a device in a device registry.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   Device device = Device.newBuilder().build();
-   *   Device response = deviceManagerClient.createDevice(parent.toString(), device);
-   * }
-   * </code></pre>
    *
    * @param parent Required. The name of the device registry where this device should be created.
    *     For example, `projects/example-project/locations/us-central1/registries/my-registry`.
@@ -730,23 +458,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return createDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Creates a device in a device registry.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   Device device = Device.newBuilder().build();
-   *   CreateDeviceRequest request = CreateDeviceRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .setDevice(device)
-   *     .build();
-   *   Device response = deviceManagerClient.createDevice(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -755,42 +469,19 @@ public class DeviceManagerClient implements BackgroundResource {
     return createDeviceCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Creates a device in a device registry.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   Device device = Device.newBuilder().build();
-   *   CreateDeviceRequest request = CreateDeviceRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .setDevice(device)
-   *     .build();
-   *   ApiFuture&lt;Device&gt; future = deviceManagerClient.createDeviceCallable().futureCall(request);
-   *   // Do something
-   *   Device response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<CreateDeviceRequest, Device> createDeviceCallable() {
     return stub.createDeviceCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets details about a device.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   Device response = deviceManagerClient.getDevice(name);
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
@@ -803,18 +494,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return getDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets details about a device.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   Device response = deviceManagerClient.getDevice(name.toString());
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
@@ -826,21 +508,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return getDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets details about a device.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   GetDeviceRequest request = GetDeviceRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   Device response = deviceManagerClient.getDevice(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -849,47 +519,25 @@ public class DeviceManagerClient implements BackgroundResource {
     return getDeviceCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets details about a device.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   GetDeviceRequest request = GetDeviceRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   ApiFuture&lt;Device&gt; future = deviceManagerClient.getDeviceCallable().futureCall(request);
-   *   // Do something
-   *   Device response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<GetDeviceRequest, Device> getDeviceCallable() {
     return stub.getDeviceCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Updates a device.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   Device device = Device.newBuilder().build();
-   *   FieldMask updateMask = FieldMask.newBuilder().build();
-   *   Device response = deviceManagerClient.updateDevice(device, updateMask);
-   * }
-   * </code></pre>
    *
    * @param device Required. The new values for the device. The `id` and `num_id` fields must be
    *     empty, and the field `name` must specify the name path. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0`or
    *     `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
-   * @param updateMask Required. Only updates the `device` fields indicated by this mask. The field
+   * @param update_mask Required. Only updates the `device` fields indicated by this mask. The field
    *     mask must not be empty, and it must not contain fields that are immutable or only set by
    *     the server. Mutable top-level fields: `credentials`, `blocked`, and `metadata`
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -900,23 +548,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return updateDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Updates a device.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   Device device = Device.newBuilder().build();
-   *   FieldMask updateMask = FieldMask.newBuilder().build();
-   *   UpdateDeviceRequest request = UpdateDeviceRequest.newBuilder()
-   *     .setDevice(device)
-   *     .setUpdateMask(updateMask)
-   *     .build();
-   *   Device response = deviceManagerClient.updateDevice(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -925,42 +559,19 @@ public class DeviceManagerClient implements BackgroundResource {
     return updateDeviceCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Updates a device.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   Device device = Device.newBuilder().build();
-   *   FieldMask updateMask = FieldMask.newBuilder().build();
-   *   UpdateDeviceRequest request = UpdateDeviceRequest.newBuilder()
-   *     .setDevice(device)
-   *     .setUpdateMask(updateMask)
-   *     .build();
-   *   ApiFuture&lt;Device&gt; future = deviceManagerClient.updateDeviceCallable().futureCall(request);
-   *   // Do something
-   *   Device response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<UpdateDeviceRequest, Device> updateDeviceCallable() {
     return stub.updateDeviceCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes a device.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   deviceManagerClient.deleteDevice(name);
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
@@ -973,18 +584,9 @@ public class DeviceManagerClient implements BackgroundResource {
     deleteDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes a device.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   deviceManagerClient.deleteDevice(name.toString());
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
@@ -996,21 +598,9 @@ public class DeviceManagerClient implements BackgroundResource {
     deleteDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes a device.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   DeleteDeviceRequest request = DeleteDeviceRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   deviceManagerClient.deleteDevice(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1019,42 +609,19 @@ public class DeviceManagerClient implements BackgroundResource {
     deleteDeviceCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes a device.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   DeleteDeviceRequest request = DeleteDeviceRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   ApiFuture&lt;Void&gt; future = deviceManagerClient.deleteDeviceCallable().futureCall(request);
-   *   // Do something
-   *   future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<DeleteDeviceRequest, Empty> deleteDeviceCallable() {
     return stub.deleteDeviceCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * List devices in a device registry.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   for (Device element : deviceManagerClient.listDevices(parent).iterateAll()) {
-   *     // doThingsWith(element);
-   *   }
-   * }
-   * </code></pre>
    *
    * @param parent Required. The device registry path. Required. For example,
    *     `projects/my-project/locations/us-central1/registries/my-registry`.
@@ -1068,20 +635,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDevices(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * List devices in a device registry.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   for (Device element : deviceManagerClient.listDevices(parent.toString()).iterateAll()) {
-   *     // doThingsWith(element);
-   *   }
-   * }
-   * </code></pre>
    *
    * @param parent Required. The device registry path. Required. For example,
    *     `projects/my-project/locations/us-central1/registries/my-registry`.
@@ -1092,23 +648,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDevices(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * List devices in a device registry.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   ListDevicesRequest request = ListDevicesRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .build();
-   *   for (Device element : deviceManagerClient.listDevices(request).iterateAll()) {
-   *     // doThingsWith(element);
-   *   }
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1117,81 +659,36 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDevicesPagedCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * List devices in a device registry.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   ListDevicesRequest request = ListDevicesRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .build();
-   *   ApiFuture&lt;ListDevicesPagedResponse&gt; future = deviceManagerClient.listDevicesPagedCallable().futureCall(request);
-   *   // Do something
-   *   for (Device element : future.get().iterateAll()) {
-   *     // doThingsWith(element);
-   *   }
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<ListDevicesRequest, ListDevicesPagedResponse>
       listDevicesPagedCallable() {
     return stub.listDevicesPagedCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * List devices in a device registry.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   ListDevicesRequest request = ListDevicesRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .build();
-   *   while (true) {
-   *     ListDevicesResponse response = deviceManagerClient.listDevicesCallable().call(request);
-   *     for (Device element : response.getDevicesList()) {
-   *       // doThingsWith(element);
-   *     }
-   *     String nextPageToken = response.getNextPageToken();
-   *     if (!Strings.isNullOrEmpty(nextPageToken)) {
-   *       request = request.toBuilder().setPageToken(nextPageToken).build();
-   *     } else {
-   *       break;
-   *     }
-   *   }
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<ListDevicesRequest, ListDevicesResponse> listDevicesCallable() {
     return stub.listDevicesCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Modifies the configuration for the device, which is eventually sent from the Cloud IoT Core
    * servers. Returns the modified configuration version and its metadata.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   DeviceConfig response = deviceManagerClient.modifyCloudToDeviceConfig(name, binaryData);
-   * }
-   * </code></pre>
-   *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
    *     `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
-   * @param binaryData Required. The configuration data for the device.
+   * @param binary_data Required. The configuration data for the device.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final DeviceConfig modifyCloudToDeviceConfig(DeviceName name, ByteString binaryData) {
@@ -1203,25 +700,15 @@ public class DeviceManagerClient implements BackgroundResource {
     return modifyCloudToDeviceConfig(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Modifies the configuration for the device, which is eventually sent from the Cloud IoT Core
    * servers. Returns the modified configuration version and its metadata.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   DeviceConfig response = deviceManagerClient.modifyCloudToDeviceConfig(name.toString(), binaryData);
-   * }
-   * </code></pre>
-   *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
    *     `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
-   * @param binaryData Required. The configuration data for the device.
+   * @param binary_data Required. The configuration data for the device.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final DeviceConfig modifyCloudToDeviceConfig(String name, ByteString binaryData) {
@@ -1233,24 +720,10 @@ public class DeviceManagerClient implements BackgroundResource {
     return modifyCloudToDeviceConfig(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Modifies the configuration for the device, which is eventually sent from the Cloud IoT Core
    * servers. Returns the modified configuration version and its metadata.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   ModifyCloudToDeviceConfigRequest request = ModifyCloudToDeviceConfigRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setBinaryData(binaryData)
-   *     .build();
-   *   DeviceConfig response = deviceManagerClient.modifyCloudToDeviceConfig(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1259,45 +732,22 @@ public class DeviceManagerClient implements BackgroundResource {
     return modifyCloudToDeviceConfigCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Modifies the configuration for the device, which is eventually sent from the Cloud IoT Core
    * servers. Returns the modified configuration version and its metadata.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   ModifyCloudToDeviceConfigRequest request = ModifyCloudToDeviceConfigRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setBinaryData(binaryData)
-   *     .build();
-   *   ApiFuture&lt;DeviceConfig&gt; future = deviceManagerClient.modifyCloudToDeviceConfigCallable().futureCall(request);
-   *   // Do something
-   *   DeviceConfig response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<ModifyCloudToDeviceConfigRequest, DeviceConfig>
       modifyCloudToDeviceConfigCallable() {
     return stub.modifyCloudToDeviceConfigCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists the last few versions of the device configuration in descending order (i.e.: newest
    * first).
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ListDeviceConfigVersionsResponse response = deviceManagerClient.listDeviceConfigVersions(name);
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
@@ -1312,19 +762,10 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDeviceConfigVersions(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists the last few versions of the device configuration in descending order (i.e.: newest
    * first).
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ListDeviceConfigVersionsResponse response = deviceManagerClient.listDeviceConfigVersions(name.toString());
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
@@ -1337,22 +778,10 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDeviceConfigVersions(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists the last few versions of the device configuration in descending order (i.e.: newest
    * first).
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ListDeviceConfigVersionsRequest request = ListDeviceConfigVersionsRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   ListDeviceConfigVersionsResponse response = deviceManagerClient.listDeviceConfigVersions(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1362,42 +791,21 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDeviceConfigVersionsCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists the last few versions of the device configuration in descending order (i.e.: newest
    * first).
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ListDeviceConfigVersionsRequest request = ListDeviceConfigVersionsRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   ApiFuture&lt;ListDeviceConfigVersionsResponse&gt; future = deviceManagerClient.listDeviceConfigVersionsCallable().futureCall(request);
-   *   // Do something
-   *   ListDeviceConfigVersionsResponse response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<ListDeviceConfigVersionsRequest, ListDeviceConfigVersionsResponse>
       listDeviceConfigVersionsCallable() {
     return stub.listDeviceConfigVersionsCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists the last few versions of the device state in descending order (i.e.: newest first).
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ListDeviceStatesResponse response = deviceManagerClient.listDeviceStates(name);
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
@@ -1410,18 +818,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDeviceStates(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists the last few versions of the device state in descending order (i.e.: newest first).
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ListDeviceStatesResponse response = deviceManagerClient.listDeviceStates(name.toString());
-   * }
-   * </code></pre>
    *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
@@ -1433,21 +832,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDeviceStates(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists the last few versions of the device state in descending order (i.e.: newest first).
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ListDeviceStatesRequest request = ListDeviceStatesRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   ListDeviceStatesResponse response = deviceManagerClient.listDeviceStates(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1456,42 +843,20 @@ public class DeviceManagerClient implements BackgroundResource {
     return listDeviceStatesCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Lists the last few versions of the device state in descending order (i.e.: newest first).
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ListDeviceStatesRequest request = ListDeviceStatesRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .build();
-   *   ApiFuture&lt;ListDeviceStatesResponse&gt; future = deviceManagerClient.listDeviceStatesCallable().futureCall(request);
-   *   // Do something
-   *   ListDeviceStatesResponse response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<ListDeviceStatesRequest, ListDeviceStatesResponse>
       listDeviceStatesCallable() {
     return stub.listDeviceStatesCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sets the access control policy on the specified resource. Replaces any existing policy.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   Policy policy = Policy.newBuilder().build();
-   *   Policy response = deviceManagerClient.setIamPolicy(resource, policy);
-   * }
-   * </code></pre>
    *
    * @param resource REQUIRED: The resource for which the policy is being specified. See the
    *     operation documentation for the appropriate value for this field.
@@ -1509,19 +874,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return setIamPolicy(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sets the access control policy on the specified resource. Replaces any existing policy.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   Policy policy = Policy.newBuilder().build();
-   *   Policy response = deviceManagerClient.setIamPolicy(resource.toString(), policy);
-   * }
-   * </code></pre>
    *
    * @param resource REQUIRED: The resource for which the policy is being specified. See the
    *     operation documentation for the appropriate value for this field.
@@ -1536,23 +891,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return setIamPolicy(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sets the access control policy on the specified resource. Replaces any existing policy.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   Policy policy = Policy.newBuilder().build();
-   *   SetIamPolicyRequest request = SetIamPolicyRequest.newBuilder()
-   *     .setResource(resource.toString())
-   *     .setPolicy(policy)
-   *     .build();
-   *   Policy response = deviceManagerClient.setIamPolicy(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1561,43 +902,20 @@ public class DeviceManagerClient implements BackgroundResource {
     return setIamPolicyCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sets the access control policy on the specified resource. Replaces any existing policy.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   Policy policy = Policy.newBuilder().build();
-   *   SetIamPolicyRequest request = SetIamPolicyRequest.newBuilder()
-   *     .setResource(resource.toString())
-   *     .setPolicy(policy)
-   *     .build();
-   *   ApiFuture&lt;Policy&gt; future = deviceManagerClient.setIamPolicyCallable().futureCall(request);
-   *   // Do something
-   *   Policy response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<SetIamPolicyRequest, Policy> setIamPolicyCallable() {
     return stub.setIamPolicyCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets the access control policy for a resource. Returns an empty policy if the resource exists
    * and does not have a policy set.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   Policy response = deviceManagerClient.getIamPolicy(resource);
-   * }
-   * </code></pre>
    *
    * @param resource REQUIRED: The resource for which the policy is being requested. See the
    *     operation documentation for the appropriate value for this field.
@@ -1611,19 +929,10 @@ public class DeviceManagerClient implements BackgroundResource {
     return getIamPolicy(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets the access control policy for a resource. Returns an empty policy if the resource exists
    * and does not have a policy set.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   Policy response = deviceManagerClient.getIamPolicy(resource.toString());
-   * }
-   * </code></pre>
    *
    * @param resource REQUIRED: The resource for which the policy is being requested. See the
    *     operation documentation for the appropriate value for this field.
@@ -1634,22 +943,10 @@ public class DeviceManagerClient implements BackgroundResource {
     return getIamPolicy(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets the access control policy for a resource. Returns an empty policy if the resource exists
    * and does not have a policy set.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   GetIamPolicyRequest request = GetIamPolicyRequest.newBuilder()
-   *     .setResource(resource.toString())
-   *     .build();
-   *   Policy response = deviceManagerClient.getIamPolicy(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1658,43 +955,21 @@ public class DeviceManagerClient implements BackgroundResource {
     return getIamPolicyCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Gets the access control policy for a resource. Returns an empty policy if the resource exists
    * and does not have a policy set.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   GetIamPolicyRequest request = GetIamPolicyRequest.newBuilder()
-   *     .setResource(resource.toString())
-   *     .build();
-   *   ApiFuture&lt;Policy&gt; future = deviceManagerClient.getIamPolicyCallable().futureCall(request);
-   *   // Do something
-   *   Policy response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<GetIamPolicyRequest, Policy> getIamPolicyCallable() {
     return stub.getIamPolicyCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Returns permissions that a caller has on the specified resource. If the resource does not
    * exist, this will return an empty set of permissions, not a NOT_FOUND error.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   List&lt;String&gt; permissions = new ArrayList&lt;&gt;();
-   *   TestIamPermissionsResponse response = deviceManagerClient.testIamPermissions(resource, permissions);
-   * }
-   * </code></pre>
    *
    * @param resource REQUIRED: The resource for which the policy detail is being requested. See the
    *     operation documentation for the appropriate value for this field.
@@ -1713,20 +988,10 @@ public class DeviceManagerClient implements BackgroundResource {
     return testIamPermissions(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Returns permissions that a caller has on the specified resource. If the resource does not
    * exist, this will return an empty set of permissions, not a NOT_FOUND error.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   List&lt;String&gt; permissions = new ArrayList&lt;&gt;();
-   *   TestIamPermissionsResponse response = deviceManagerClient.testIamPermissions(resource.toString(), permissions);
-   * }
-   * </code></pre>
    *
    * @param resource REQUIRED: The resource for which the policy detail is being requested. See the
    *     operation documentation for the appropriate value for this field.
@@ -1745,24 +1010,10 @@ public class DeviceManagerClient implements BackgroundResource {
     return testIamPermissions(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Returns permissions that a caller has on the specified resource. If the resource does not
    * exist, this will return an empty set of permissions, not a NOT_FOUND error.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   List&lt;String&gt; permissions = new ArrayList&lt;&gt;();
-   *   TestIamPermissionsRequest request = TestIamPermissionsRequest.newBuilder()
-   *     .setResource(resource.toString())
-   *     .addAllPermissions(permissions)
-   *     .build();
-   *   TestIamPermissionsResponse response = deviceManagerClient.testIamPermissions(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1771,33 +1022,19 @@ public class DeviceManagerClient implements BackgroundResource {
     return testIamPermissionsCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Returns permissions that a caller has on the specified resource. If the resource does not
    * exist, this will return an empty set of permissions, not a NOT_FOUND error.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   ResourceName resource = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   List&lt;String&gt; permissions = new ArrayList&lt;&gt;();
-   *   TestIamPermissionsRequest request = TestIamPermissionsRequest.newBuilder()
-   *     .setResource(resource.toString())
-   *     .addAllPermissions(permissions)
-   *     .build();
-   *   ApiFuture&lt;TestIamPermissionsResponse&gt; future = deviceManagerClient.testIamPermissionsCallable().futureCall(request);
-   *   // Do something
-   *   TestIamPermissionsResponse response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<TestIamPermissionsRequest, TestIamPermissionsResponse>
       testIamPermissionsCallable() {
     return stub.testIamPermissionsCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sends a command to the specified device. In order for a device to be able to receive commands,
    * it must: 1) be connected to Cloud IoT Core using the MQTT protocol, and 2) be subscribed to the
@@ -1810,20 +1047,10 @@ public class DeviceManagerClient implements BackgroundResource {
    * least once delivery will be guaranteed; for QoS 0, no acknowledgment will be expected from the
    * device.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   SendCommandToDeviceResponse response = deviceManagerClient.sendCommandToDevice(name, binaryData);
-   * }
-   * </code></pre>
-   *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
    *     `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
-   * @param binaryData Required. The command data to send to the device.
+   * @param binary_data Required. The command data to send to the device.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final SendCommandToDeviceResponse sendCommandToDevice(
@@ -1836,7 +1063,7 @@ public class DeviceManagerClient implements BackgroundResource {
     return sendCommandToDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sends a command to the specified device. In order for a device to be able to receive commands,
    * it must: 1) be connected to Cloud IoT Core using the MQTT protocol, and 2) be subscribed to the
@@ -1849,20 +1076,10 @@ public class DeviceManagerClient implements BackgroundResource {
    * least once delivery will be guaranteed; for QoS 0, no acknowledgment will be expected from the
    * device.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   SendCommandToDeviceResponse response = deviceManagerClient.sendCommandToDevice(name.toString(), binaryData);
-   * }
-   * </code></pre>
-   *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
    *     `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
-   * @param binaryData Required. The command data to send to the device.
+   * @param binary_data Required. The command data to send to the device.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final SendCommandToDeviceResponse sendCommandToDevice(String name, ByteString binaryData) {
@@ -1871,7 +1088,7 @@ public class DeviceManagerClient implements BackgroundResource {
     return sendCommandToDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sends a command to the specified device. In order for a device to be able to receive commands,
    * it must: 1) be connected to Cloud IoT Core using the MQTT protocol, and 2) be subscribed to the
@@ -1884,21 +1101,10 @@ public class DeviceManagerClient implements BackgroundResource {
    * least once delivery will be guaranteed; for QoS 0, no acknowledgment will be expected from the
    * device.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   String subfolder = "";
-   *   SendCommandToDeviceResponse response = deviceManagerClient.sendCommandToDevice(name, binaryData, subfolder);
-   * }
-   * </code></pre>
-   *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
    *     `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
-   * @param binaryData Required. The command data to send to the device.
+   * @param binary_data Required. The command data to send to the device.
    * @param subfolder Optional subfolder for the command. If empty, the command will be delivered to
    *     the /devices/{device-id}/commands topic, otherwise it will be delivered to the
    *     /devices/{device-id}/commands/{subfolder} topic. Multi-level subfolders are allowed. This
@@ -1917,7 +1123,7 @@ public class DeviceManagerClient implements BackgroundResource {
     return sendCommandToDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sends a command to the specified device. In order for a device to be able to receive commands,
    * it must: 1) be connected to Cloud IoT Core using the MQTT protocol, and 2) be subscribed to the
@@ -1930,21 +1136,10 @@ public class DeviceManagerClient implements BackgroundResource {
    * least once delivery will be guaranteed; for QoS 0, no acknowledgment will be expected from the
    * device.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   String subfolder = "";
-   *   SendCommandToDeviceResponse response = deviceManagerClient.sendCommandToDevice(name.toString(), binaryData, subfolder);
-   * }
-   * </code></pre>
-   *
    * @param name Required. The name of the device. For example,
    *     `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
    *     `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
-   * @param binaryData Required. The command data to send to the device.
+   * @param binary_data Required. The command data to send to the device.
    * @param subfolder Optional subfolder for the command. If empty, the command will be delivered to
    *     the /devices/{device-id}/commands topic, otherwise it will be delivered to the
    *     /devices/{device-id}/commands/{subfolder} topic. Multi-level subfolders are allowed. This
@@ -1963,7 +1158,7 @@ public class DeviceManagerClient implements BackgroundResource {
     return sendCommandToDevice(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sends a command to the specified device. In order for a device to be able to receive commands,
    * it must: 1) be connected to Cloud IoT Core using the MQTT protocol, and 2) be subscribed to the
@@ -1975,20 +1170,6 @@ public class DeviceManagerClient implements BackgroundResource {
    * FAILED_PRECONDITION. Otherwise, this method will return OK. If the subscription is QoS 1, at
    * least once delivery will be guaranteed; for QoS 0, no acknowledgment will be expected from the
    * device.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   SendCommandToDeviceRequest request = SendCommandToDeviceRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setBinaryData(binaryData)
-   *     .build();
-   *   SendCommandToDeviceResponse response = deviceManagerClient.sendCommandToDevice(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1997,7 +1178,7 @@ public class DeviceManagerClient implements BackgroundResource {
     return sendCommandToDeviceCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Sends a command to the specified device. In order for a device to be able to receive commands,
    * it must: 1) be connected to Cloud IoT Core using the MQTT protocol, and 2) be subscribed to the
@@ -2011,46 +1192,21 @@ public class DeviceManagerClient implements BackgroundResource {
    * device.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   DeviceName name = DeviceName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]", "[DEVICE]");
-   *   ByteString binaryData = ByteString.copyFromUtf8("");
-   *   SendCommandToDeviceRequest request = SendCommandToDeviceRequest.newBuilder()
-   *     .setName(name.toString())
-   *     .setBinaryData(binaryData)
-   *     .build();
-   *   ApiFuture&lt;SendCommandToDeviceResponse&gt; future = deviceManagerClient.sendCommandToDeviceCallable().futureCall(request);
-   *   // Do something
-   *   SendCommandToDeviceResponse response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<SendCommandToDeviceRequest, SendCommandToDeviceResponse>
       sendCommandToDeviceCallable() {
     return stub.sendCommandToDeviceCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Associates the device with the gateway.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   String gatewayId = "";
-   *   String deviceId = "";
-   *   BindDeviceToGatewayResponse response = deviceManagerClient.bindDeviceToGateway(parent, gatewayId, deviceId);
-   * }
-   * </code></pre>
-   *
    * @param parent Required. The name of the registry. For example,
    *     `projects/example-project/locations/us-central1/registries/my-registry`.
-   * @param gatewayId Required. The value of `gateway_id` can be either the device numeric ID or the
-   *     user-defined device identifier.
-   * @param deviceId Required. The device to associate with the specified gateway. The value of
+   * @param gateway_id Required. The value of `gateway_id` can be either the device numeric ID or
+   *     the user-defined device identifier.
+   * @param device_id Required. The device to associate with the specified gateway. The value of
    *     `device_id` can be either the device numeric ID or the user-defined device identifier.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -2065,26 +1221,15 @@ public class DeviceManagerClient implements BackgroundResource {
     return bindDeviceToGateway(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Associates the device with the gateway.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   String gatewayId = "";
-   *   String deviceId = "";
-   *   BindDeviceToGatewayResponse response = deviceManagerClient.bindDeviceToGateway(parent.toString(), gatewayId, deviceId);
-   * }
-   * </code></pre>
-   *
    * @param parent Required. The name of the registry. For example,
    *     `projects/example-project/locations/us-central1/registries/my-registry`.
-   * @param gatewayId Required. The value of `gateway_id` can be either the device numeric ID or the
-   *     user-defined device identifier.
-   * @param deviceId Required. The device to associate with the specified gateway. The value of
+   * @param gateway_id Required. The value of `gateway_id` can be either the device numeric ID or
+   *     the user-defined device identifier.
+   * @param device_id Required. The device to associate with the specified gateway. The value of
    *     `device_id` can be either the device numeric ID or the user-defined device identifier.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -2099,25 +1244,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return bindDeviceToGateway(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Associates the device with the gateway.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   String gatewayId = "";
-   *   String deviceId = "";
-   *   BindDeviceToGatewayRequest request = BindDeviceToGatewayRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .setGatewayId(gatewayId)
-   *     .setDeviceId(deviceId)
-   *     .build();
-   *   BindDeviceToGatewayResponse response = deviceManagerClient.bindDeviceToGateway(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -2126,53 +1255,26 @@ public class DeviceManagerClient implements BackgroundResource {
     return bindDeviceToGatewayCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Associates the device with the gateway.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   String gatewayId = "";
-   *   String deviceId = "";
-   *   BindDeviceToGatewayRequest request = BindDeviceToGatewayRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .setGatewayId(gatewayId)
-   *     .setDeviceId(deviceId)
-   *     .build();
-   *   ApiFuture&lt;BindDeviceToGatewayResponse&gt; future = deviceManagerClient.bindDeviceToGatewayCallable().futureCall(request);
-   *   // Do something
-   *   BindDeviceToGatewayResponse response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<BindDeviceToGatewayRequest, BindDeviceToGatewayResponse>
       bindDeviceToGatewayCallable() {
     return stub.bindDeviceToGatewayCallable();
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes the association between the device and the gateway.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   String gatewayId = "";
-   *   String deviceId = "";
-   *   UnbindDeviceFromGatewayResponse response = deviceManagerClient.unbindDeviceFromGateway(parent, gatewayId, deviceId);
-   * }
-   * </code></pre>
-   *
    * @param parent Required. The name of the registry. For example,
    *     `projects/example-project/locations/us-central1/registries/my-registry`.
-   * @param gatewayId Required. The value of `gateway_id` can be either the device numeric ID or the
-   *     user-defined device identifier.
-   * @param deviceId Required. The device to disassociate from the specified gateway. The value of
+   * @param gateway_id Required. The value of `gateway_id` can be either the device numeric ID or
+   *     the user-defined device identifier.
+   * @param device_id Required. The device to disassociate from the specified gateway. The value of
    *     `device_id` can be either the device numeric ID or the user-defined device identifier.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -2187,26 +1289,15 @@ public class DeviceManagerClient implements BackgroundResource {
     return unbindDeviceFromGateway(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes the association between the device and the gateway.
    *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   String gatewayId = "";
-   *   String deviceId = "";
-   *   UnbindDeviceFromGatewayResponse response = deviceManagerClient.unbindDeviceFromGateway(parent.toString(), gatewayId, deviceId);
-   * }
-   * </code></pre>
-   *
    * @param parent Required. The name of the registry. For example,
    *     `projects/example-project/locations/us-central1/registries/my-registry`.
-   * @param gatewayId Required. The value of `gateway_id` can be either the device numeric ID or the
-   *     user-defined device identifier.
-   * @param deviceId Required. The device to disassociate from the specified gateway. The value of
+   * @param gateway_id Required. The value of `gateway_id` can be either the device numeric ID or
+   *     the user-defined device identifier.
+   * @param device_id Required. The device to disassociate from the specified gateway. The value of
    *     `device_id` can be either the device numeric ID or the user-defined device identifier.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -2221,25 +1312,9 @@ public class DeviceManagerClient implements BackgroundResource {
     return unbindDeviceFromGateway(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes the association between the device and the gateway.
-   *
-   * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   String gatewayId = "";
-   *   String deviceId = "";
-   *   UnbindDeviceFromGatewayRequest request = UnbindDeviceFromGatewayRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .setGatewayId(gatewayId)
-   *     .setDeviceId(deviceId)
-   *     .build();
-   *   UnbindDeviceFromGatewayResponse response = deviceManagerClient.unbindDeviceFromGateway(request);
-   * }
-   * </code></pre>
    *
    * @param request The request object containing all of the parameters for the API call.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -2249,27 +1324,11 @@ public class DeviceManagerClient implements BackgroundResource {
     return unbindDeviceFromGatewayCallable().call(request);
   }
 
-  // AUTO-GENERATED DOCUMENTATION AND METHOD
+  // AUTO-GENERATED DOCUMENTATION AND METHOD.
   /**
    * Deletes the association between the device and the gateway.
    *
    * <p>Sample code:
-   *
-   * <pre><code>
-   * try (DeviceManagerClient deviceManagerClient = DeviceManagerClient.create()) {
-   *   RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-   *   String gatewayId = "";
-   *   String deviceId = "";
-   *   UnbindDeviceFromGatewayRequest request = UnbindDeviceFromGatewayRequest.newBuilder()
-   *     .setParent(parent.toString())
-   *     .setGatewayId(gatewayId)
-   *     .setDeviceId(deviceId)
-   *     .build();
-   *   ApiFuture&lt;UnbindDeviceFromGatewayResponse&gt; future = deviceManagerClient.unbindDeviceFromGatewayCallable().futureCall(request);
-   *   // Do something
-   *   UnbindDeviceFromGatewayResponse response = future.get();
-   * }
-   * </code></pre>
    */
   public final UnaryCallable<UnbindDeviceFromGatewayRequest, UnbindDeviceFromGatewayResponse>
       unbindDeviceFromGatewayCallable() {
