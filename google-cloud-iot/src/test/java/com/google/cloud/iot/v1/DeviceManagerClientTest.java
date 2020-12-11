@@ -1569,8 +1569,8 @@ public class DeviceManagerClientTest {
     mockDeviceManager.addResponse(expectedResponse);
 
     RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-    String gatewayId = "gateway_id955798774";
-    String deviceId = "device_id25209764";
+    String gatewayId = "gatewayId-1354641793";
+    String deviceId = "deviceId1109191185";
 
     BindDeviceToGatewayResponse actualResponse =
         client.bindDeviceToGateway(parent, gatewayId, deviceId);
@@ -1596,8 +1596,8 @@ public class DeviceManagerClientTest {
 
     try {
       RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-      String gatewayId = "gateway_id955798774";
-      String deviceId = "device_id25209764";
+      String gatewayId = "gatewayId-1354641793";
+      String deviceId = "deviceId1109191185";
       client.bindDeviceToGateway(parent, gatewayId, deviceId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
@@ -1611,8 +1611,8 @@ public class DeviceManagerClientTest {
     mockDeviceManager.addResponse(expectedResponse);
 
     String parent = "parent-995424086";
-    String gatewayId = "gateway_id955798774";
-    String deviceId = "device_id25209764";
+    String gatewayId = "gatewayId-1354641793";
+    String deviceId = "deviceId1109191185";
 
     BindDeviceToGatewayResponse actualResponse =
         client.bindDeviceToGateway(parent, gatewayId, deviceId);
@@ -1638,8 +1638,8 @@ public class DeviceManagerClientTest {
 
     try {
       String parent = "parent-995424086";
-      String gatewayId = "gateway_id955798774";
-      String deviceId = "device_id25209764";
+      String gatewayId = "gatewayId-1354641793";
+      String deviceId = "deviceId1109191185";
       client.bindDeviceToGateway(parent, gatewayId, deviceId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
@@ -1654,8 +1654,8 @@ public class DeviceManagerClientTest {
     mockDeviceManager.addResponse(expectedResponse);
 
     RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-    String gatewayId = "gateway_id955798774";
-    String deviceId = "device_id25209764";
+    String gatewayId = "gatewayId-1354641793";
+    String deviceId = "deviceId1109191185";
 
     UnbindDeviceFromGatewayResponse actualResponse =
         client.unbindDeviceFromGateway(parent, gatewayId, deviceId);
@@ -1682,8 +1682,8 @@ public class DeviceManagerClientTest {
 
     try {
       RegistryName parent = RegistryName.of("[PROJECT]", "[LOCATION]", "[REGISTRY]");
-      String gatewayId = "gateway_id955798774";
-      String deviceId = "device_id25209764";
+      String gatewayId = "gatewayId-1354641793";
+      String deviceId = "deviceId1109191185";
       client.unbindDeviceFromGateway(parent, gatewayId, deviceId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
@@ -1698,8 +1698,8 @@ public class DeviceManagerClientTest {
     mockDeviceManager.addResponse(expectedResponse);
 
     String parent = "parent-995424086";
-    String gatewayId = "gateway_id955798774";
-    String deviceId = "device_id25209764";
+    String gatewayId = "gatewayId-1354641793";
+    String deviceId = "deviceId1109191185";
 
     UnbindDeviceFromGatewayResponse actualResponse =
         client.unbindDeviceFromGateway(parent, gatewayId, deviceId);
@@ -1726,8 +1726,8 @@ public class DeviceManagerClientTest {
 
     try {
       String parent = "parent-995424086";
-      String gatewayId = "gateway_id955798774";
-      String deviceId = "device_id25209764";
+      String gatewayId = "gatewayId-1354641793";
+      String deviceId = "deviceId1109191185";
       client.unbindDeviceFromGateway(parent, gatewayId, deviceId);
       Assert.fail("No exception raised");
     } catch (InvalidArgumentException e) {
