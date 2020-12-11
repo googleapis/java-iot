@@ -317,11 +317,21 @@ public class GrpcDeviceManagerStub extends DeviceManagerStub {
         DeviceManagerStubSettings.newBuilder().build(), clientContext, callableFactory);
   }
 
+  /**
+   * Constructs an instance of GrpcDeviceManagerStub, using the given settings. This is protected so
+   * that it is easy to make a subclass, but otherwise, the static factory methods should be
+   * preferred.
+   */
   protected GrpcDeviceManagerStub(DeviceManagerStubSettings settings, ClientContext clientContext)
       throws IOException {
     this(settings, clientContext, new GrpcDeviceManagerCallableFactory());
   }
 
+  /**
+   * Constructs an instance of GrpcDeviceManagerStub, using the given settings. This is protected so
+   * that it is easy to make a subclass, but otherwise, the static factory methods should be
+   * preferred.
+   */
   protected GrpcDeviceManagerStub(
       DeviceManagerStubSettings settings,
       ClientContext clientContext,
