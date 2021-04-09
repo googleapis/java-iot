@@ -8,6 +8,9 @@ Java idiomatic client for [Cloud Internet of Things (IoT) Core][product-docs].
 - [Product Documentation][product-docs]
 - [Client Library Documentation][javadocs]
 
+
+
+
 ## Quickstart
 
 If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file
