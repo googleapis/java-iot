@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://www.github.com/googleapis/java-iot/compare/v1.3.2...v1.4.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#538](https://www.github.com/googleapis/java-iot/issues/538)) ([1cfdc65](https://www.github.com/googleapis/java-iot/commit/1cfdc65c427b28420041ed181a676ab4bc5799c9))
+
 ### [1.3.2](https://www.github.com/googleapis/java-iot/compare/v1.3.1...v1.3.2) (2021-07-01)
 
 
