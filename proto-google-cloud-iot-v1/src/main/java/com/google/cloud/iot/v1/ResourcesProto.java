@@ -97,8 +97,7 @@ public final class ResourcesProto {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + "#google/cloud/iot/v1/resources.proto\022\023g"
-          + "oogle.cloud.iot.v1\032\031google/api/resource.proto\032\037google/protobuf/timestamp.proto\032\027google/rpc/status.proto\"\260\007\n"
+          + "#google/cloud/iot/v1/resources.proto\022\023google.cloud.iot.v1\032\031google/api/resource.proto\032\037google/protobuf/timestamp.proto\032\027google/rpc/status.proto\"\260\007\n"
           + "\006Device\022\n\n"
           + "\002id\030\001 \001(\t\022\014\n"
           + "\004name\030\002 \001(\t\022\016\n"
