@@ -31,5 +31,5 @@ deep-copy-regex:
   dest: "/owl-bot-staging/$1/grpc-google-cloud-iot-$1/src"
 - source: "/google/cloud/iot/(v.*)/.*-java/gapic-google-.*/src"
   dest: "/owl-bot-staging/$1/google-cloud-iot/src"
-- source: "/google/cloud/dataproc/(v.*)/.*-java/samples/snippets/generated"
+- source: "/google/cloud/iot/(v.*)/.*-java/samples/snippets/generated"
   dest: "/owl-bot-staging/$1/samples/snippets/generated"
