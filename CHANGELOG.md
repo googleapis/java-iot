@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.6](https://github.com/googleapis/java-iot/compare/v2.3.5...v2.3.6) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([b88bcc6](https://github.com/googleapis/java-iot/commit/b88bcc67479f779ccff8b6e9dcbab574c8711ac4))
+
 ## [2.3.5](https://github.com/googleapis/java-iot/compare/v2.3.4...v2.3.5) (2022-10-03)
 
 
