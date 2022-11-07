@@ -9,6 +9,13 @@ Java idiomatic client for [Cloud Internet of Things (IoT) Core][product-docs].
 - [Client Library Documentation][javadocs]
 
 
+:bus: In October 2022, this library has moved to
+[google-cloud-java/java-iot](
+https://github.com/googleapis/google-cloud-java/tree/main/java-iot).
+This repository will be archived in the future.
+Future releases will appear in the new repository (https://github.com/googleapis/google-cloud-java/releases).
+The Maven artifact coordinates (`com.google.cloud:google-cloud-iot`) remain the same.
+
 ## Quickstart
 
 If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file:
@@ -49,20 +56,20 @@ If you are using Maven without BOM, add this to your dependencies:
 If you are using Gradle 5.x or later, add this to your dependencies:
 
 ```Groovy
-implementation platform('com.google.cloud:libraries-bom:26.1.3')
+implementation platform('com.google.cloud:libraries-bom:26.1.4')
 
 implementation 'com.google.cloud:google-cloud-iot'
 ```
 If you are using Gradle without BOM, add this to your dependencies:
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-iot:2.3.6'
+implementation 'com.google.cloud:google-cloud-iot:2.5.0'
 ```
 
 If you are using SBT, add this to your dependencies:
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-iot" % "2.3.6"
+libraryDependencies += "com.google.cloud" % "google-cloud-iot" % "2.5.0"
 ```
 
 ## Authentication
